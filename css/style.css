@@ -1,0 +1,572 @@
+/*
+ * Awwards Demo Github Page by Joshua Pekera
+ * This is for the demo page only and has a lot of uncessasry style for implimenting the Awwwards retina banners. I would not recommend using anything in this file.
+*/
+
+/* Table of Content
+==================================================
+  :: Global Site Styles
+  :: Header and Global Nav
+  :: Side Nav
+  :: Content Containers and Grids
+  :: Page Specific
+  :: Media Queries
+  :: Font-Face 
+*/
+
+/* Global Site Styles
+================================================== */
+body {
+	font-family:"Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight:400;
+	font-style:normal;
+	color:#3c4c51;
+	font-size:15px;
+	line-height:15px;
+	padding-top: 0px;
+	background-color: #f7f9fa;
+}
+
+/* Links */
+a {
+	color: #6b6c6c;
+	text-fill-color: none;
+	-webkit-transition: color .4s linear;
+	-moz-transition: color .4s linear;
+	-o-transition: color .4s linear;
+	-ms-transition: color .4s linear;
+	transition: color .4s linear;
+}
+a:hover, a:focus {
+	color: #5eab8d;
+	text-decoration: none;
+}
+
+/* Headers */
+h1, h2, h3 { color: #3c4c51}
+h1 strong {}
+h2 {}
+h3 {}
+h4 {}
+p {}
+
+/* Header and Global Nav
+================================================== */
+
+/* Header */
+.navbar-inner {
+	min-height: 100px;
+	vertical-align: middle;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: #f7f9fa;
+}
+
+.navbar-inner .container {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+	position: static;
+}
+
+.navbar .brand {
+	display: block;
+	float: none;
+	padding: 0;
+	margin-left: 0px;
+	font-family: Museo-300;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 250%;
+	letter-spacing: normal;
+	line-height: 1;
+	color: #3c4c51;
+	-webkit-transition: color .4s linear;
+	-moz-transition: color .4s linear;
+	-o-transition: color .4s linear;
+	transition: color .4s linear;
+}
+
+.navbar a.brand {
+	background: url('../img/awwwardslogo.png') no-repeat;
+	height: 54px;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.navbar .brand strong {
+	letter-spacing:-3px;
+}
+
+.navbar .btn-navbar{
+	float: left;
+}
+
+.navbar-fixed-top {
+	margin-bottom: 20px;
+}
+
+
+/* Global Nav */
+
+
+/* Page Slide */
+#pageslide {
+/* These styles MUST be included. Do not change. */
+	display:none;
+	position:absolute;
+	position:fixed;
+	top:0;
+	height:100%;
+	z-index:999999;
+/* Specify the width of your pageslide here */
+	width:200px;
+	padding:0;
+/* These styles are optional, and describe how the pageslide will look */
+	background-color:#333;
+	color:#FFF;
+	border-right:solid 1px #242424
+}
+
+.open {
+	display:none;
+}
+
+
+/* Side Nav
+================================================== */
+
+
+/* Content Containers and Grids
+================================================== */
+
+/* Default display */
+
+/* Main Content Area */
+
+/* Grids */
+
+/* Grid Lists */
+
+/* Grid Columns */
+
+/* Debug Output */
+
+
+/* Page Specific Styles
+================================================== */
+
+/* Page Titles, Icons, and Shapes
+----------------------------------- */
+
+
+/* Home Page
+---------------- */
+
+.hero-unit {
+	background: transparent;
+	text-align: center;
+	margin-top: 0px;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	text-align: center;
+}
+
+.featurewrapper {
+	position: relative;
+	max-width: 919px;
+	margin: 0 auto;
+}
+
+img.browser {
+	position: relative;
+}
+
+img.ribbons {
+	z-index: 10;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+img.ribbon-white {
+	z-index: 10;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+img.ribbon-black {
+	z-index: 11;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+img.ribbon-green {
+	z-index: 12;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+img.retina {
+	z-index: 9;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+.buckets {
+	margin-top: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.buckets p {
+	text-align: center;
+	padding-top: 15px;
+	color: #cacbcc;
+	font-family: Georgia, sans-serif;
+	font-style: italic;
+}
+
+.buckets img {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 0px;
+}
+
+/* Demo Page
+---------------- */
+
+.wrapper {
+	position: relative;
+	max-width: 270px;
+	margin: 0 auto;
+}
+
+img.holder {
+	margin-top: 60px;
+	margin-bottom: 0px;
+}
+
+img.awwwshadow {
+	position: absolute;
+	left: 0;
+	top:60px;
+	z-index: 2;
+}
+
+img.awwwicon {
+	position:absolute;
+	left: 0;
+	top: 60px;
+	z-index: 4;
+
+}
+
+hr.divide {
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+/* Footer
+================================================== */
+footer {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #a0a1a2;
+}
+
+.credit {
+	margin-right: 20px;
+	display: inline-block;
+	position: relative;
+	vertical-align: text-top;
+	line-height: 43px;
+}
+
+.tweet {
+	display: inline-block;
+	position: relative;
+	height: 2px;
+}
+
+/* Elements
+================================================== */
+
+/* Buttons
+-----------------------*/
+a.btn-cta {
+	color: #adaeaf;
+	text-align: center;
+	padding: 9px 15px;
+	background-color: #f0f1f2;
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px white;
+	line-height: normal;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d9dbdc;
+		-webkit-box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d9dbdc;
+		-moz-box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d9dbdc;
+		-o-box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d9dbdc;
+	background-color: #f0f1f2;
+	transition-property:color, background;   
+	transition-duration: .4s, .4s;   
+	transition-timing-function: linear, linear;
+		-webkit-transition-property:color, background;   
+		-webkit-transition-duration: .4s, .4s;   
+		-webkit-transition-timing-function: linear, linear;
+		-moz-transition-property:color, background;   
+		-moz-transition-duration: .4s, .4s;   
+		-moz-transition-timing-function: linear, linear;
+		-o-transition-property:color, background;   
+		-o-transition-duration: .4s, .4s;   
+		-o-transition-timing-function: linear, linear; 
+	display: block;
+}
+
+.btn-cta:hover,
+.btn-cta:active,
+.btn-cta.active,
+.btn-cta.disabled,
+.btn-cta[disabled] {
+  color: #8b8c8c;
+  background-color: #e8e8e8;
+  *background-color: #e8e8e8;
+}
+
+.btn-cta:active,
+.btn-cta.active {
+  background-color: #e8e8e8 \9;
+}
+
+
+/* Share Widgets
+================================================== */
+
+/* Facebook Responsive
+-----------------------*/
+.fb-comments,.fb_iframe_widget iframe[style],.fb_iframe_widget span[style] {
+	width:100%!important;
+}
+
+.fb-like {
+	margin-bottom:20px;
+	overflow:hidden;
+	float:left!important;
+}
+
+.fb-like span[style],.fb-like span iframe[style] {
+	width:90px!important;
+}
+
+/* Multimedia Elements
+================================================== */
+
+/* Responsive video embeds (must be wrapped container)
+-------------------------------------------------------*/
+.embed-container {
+	position:relative;
+	padding-bottom:56.25%;/*16/9 ratio*/
+	padding-top:0;
+	height:0;
+	overflow:hidden;
+}
+
+.embed-container iframe,.embed-container object,.embed-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/* Media Queries
+================================================== */
+
+/*:::PRIMARY:::*//* Landscape phone to portrait tablet 
+----------------------------------------*/
+@media (max-width: 767px) {
+/* Styles */
+
+body {
+	padding-top: 0px;
+}
+
+/* Globalnav Page slide */
+ul#globalnav {
+	display:none
+}
+
+.open {
+	display:block
+}
+
+#pageslide {
+	width:200px
+}
+
+#pageslide ul#globalnav {
+	width:auto;
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border:none;
+	background:none;
+	box-shadow:none;
+/* Firefox v3.5+ */
+	-moz-box-shadow:none;
+/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-box-shadow:none;
+/* Firefox v4.0+ , Safari v5.1+ , Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+	box-shadow:none;
+	text-indent:0;
+	color:#FFF;
+	margin:0;
+	background-color:transparent
+}
+
+#pageslide ul#globalnav li {
+	padding:0;
+	margin:0 20px;
+	list-style:none;
+	display:block;
+	float:none
+}
+
+#pageslide ul#globalnav li:active {
+	-webkit-tap-highlight-color:green;
+	background-color:#222
+}
+
+#pageslide ul#globalnav li a.navtext {
+	position:relative;
+	bottom:0;
+	color:#848484;
+	text-shadow:0 1px 0 rgba(0,0,0,.6);
+	width:auto;
+	font:600 18px/30px proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-transition:color .4s linear;
+	-moz-transition:color .4s linear;
+	-o-transition:color .4s linear;
+	-ms-transition:color .4s linear;
+	transition:color .4s linear;
+	border-bottom:solid 1px #2b2b2b;
+	-moz-box-shadow:0 1px 0 #3d3d3d;
+	-webkit-box-shadow:0 1px 0 #3d3d3d;
+	box-shadow:0 1px 0 #3d3d3d;
+	padding:11px 20px;
+	display:block;
+	text-align:left
+}
+
+#pageslide ul#globalnav li a.navtext:hover {
+	text-decoration:none;
+	color:#fff
+}
+
+#pageslide ul#globalnav li a.navtext.active {
+	text-decoration:none;
+	color:#fff
+}
+}
+
+/* Mobile Devices Landscape Specific
+----------------------------------------*/
+@media (min-width: 480px) and (max-width: 767px) {
+/* Styles */
+}
+
+/*:::PRIMARY:::*//* Landscape phones and down 
+---------------------------------------------------------------------*/
+@media (max-width: 480px) {
+/* Styles */
+	.navbar a.brand {
+		background-size: 270px 49px;
+		height: 49px;
+		width: 270px;
+	}
+}
+
+/*:::PRIMARY:::*//* Portrait tablet to landscape and desktop 
+------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 979px) {
+/* Styles */
+body {
+	padding-top: 0px;
+}
+}
+
+
+/* iPads (portrait and landscape) 
+---------------------------------------------------------------------------------------*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) 
+------------------------ */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait)
+----------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Slidely Wide Desktop Display
+------------------------------------*/
+@media (min-width: 980px) {
+/* Styles */
+}
+
+/* Large Desktop Displays 
+----------------------------------------*/
+@media (min-width: 1200px) {
+/* Styles */
+}
+
+/* Retina Displays (Tip: Best used only for image replacement)
+------------------------------------------------------------------ */
+@media 
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+	.navbar a.brand {
+		background: url('../img/awwwardslogo2x.png') no-repeat;
+		background-size: 270px 49px;
+		height: 49px;
+		width: 270px;
+	}
+}
+
+
+/* Font-Face
+================================================== */
+/* Hide text while web fonts are loading */
+@font-face {font-family: 'Museo-300';src: url('../webfonts/23CBA0_0_0.eot');src: url('../webfonts/23CBA0_0_0.eot?#iefix') format('../embedded-opentype'),url('../webfonts/23CBA0_0_0.woff') format('woff'),url('../webfonts/23CBA0_0_0.ttf') format('truetype');}
+
+.Museo-300 { 
+	font-family: Museo-300;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading p, .wf-loading a { visibility: hidden; }
+
