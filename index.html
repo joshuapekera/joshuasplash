@@ -1,24 +1,39 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-
-    <title>Awwwards Retina Banners</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-  
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]--><head>
+	<meta charset="utf-8">
+  	<!-- You can use .htaccess and remove these lines to avoid edge case issues. -->
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<title>Joshua Pekera</title>
+  	<meta name="author" content="Joshua Pekera">
+  	<meta name="description" content="UX designer and front end developer">
+  	<meta name="keywords" content="ux design, developer, digital prodcuer">
+  	<!-- Mobile viewport optimized -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">	
+	<!-- Set a base location for assets -->
+	<!-- <base href="http://joshuapekera.com/"/> -->
+	<!-- End base -->
+	<!-- TypeKit Async -->
+	<script type="text/javascript">
+		  (function() {
+		    var config = {
+		      kitId: 'qpj1hre',
+		      scriptTimeout: 3000
+		    };
+		    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/( |^)wf-loading( |$)/g,"");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script");tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(a&&a!="complete"&&a!="loaded")return;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+		  })();
+	</script>
+  	<!-- CSS. No need to specify the media attribute unless specifically targeting a media type, leaving blank implies media=all -->
+  	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="css/keyframes.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <!-- PLACE YOUR AWWARDS.CSS LINK AFTER THE REST OF YOUR CSS -->
-    <link href="css/awwwards.css" rel="stylesheet" type="text/css">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,64 +48,81 @@
 </head>
 
 <body>
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="brand animated fadeInDown" id="logo" href="#"></a>
-            </div>
-        </div>
-    </div>
+	
+	<div id="view-main">
+    <!-- Navbar
+	================================================== -->
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="plus" onclick="scripts.js"></a>
+				<p class="brand" >Joshua Pekera</p>  
+				<div class="nav-slideout">
+					<ul class="nav animated bounceInRight" id="globalnav">
+						<li><a href="/" class="active"><i></i>Home</a></li>
+						<li><a href="#" class="">Work</a></li>
+						<li><a href="#" class="">Labs</a></li>
+						<li><a href="#" class="">Journal</a></li>
+						<li><a href="#" class="">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
 
-    <div class="container">
+
+    <div class="hero-unit">
+    	<img src="img/joshuapekera.jpg" alt="Joshua Pekera Cover" width="615" height="auto"/>
+    </div>
     
-    	<div class="hero-unit">
-    		<div class="featurewrapper">
-	    		<img class="ribbon-white animated bounceInDown" id="ribbonone" src="img/ribbon-white.png" height="594" width="919" alt="White Ribbon">
-	    		<img class="ribbon-black animated bounceInDown" id="ribbontwo" src="img/ribbon-black.png" height="594" width="919" alt="Black Ribbon">
-	    		<img class="ribbon-green animated bounceInDown" id="ribbonthree" src="img/ribbon-green.png" height="594" width="919" alt="Green Ribbon">
-	    		<img class="retina animated fadeIn" id="retina" src="img/retina.png" height="594" width="919" alt="Retina">
-	    		<!-- <h2>retina ribbons</h2> -->
-	    		<img class="browser animated fadeInUp" id="browser" src="img/browser2x.png" height="594" width="919" alt="Browser Window">
-    		</div>
-    	</div>
-    	
-    	<div class="row">
-    		<div class="span4">
-    			<div class="buckets">
-    				<a href="/awwwards-retina-ribbons/demo.html" class="btn-cta">Demo</a>
-    				<p>html &amp; css</p>
-    			</div>
-    		</div>
-    		<div class="span4">
-    			<div class="buckets">
-    				<a href="https://github.com/joshuapekera/awwwards-retina-ribbons/zipball/master" class="btn-cta" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.1.0']);">Download</a>
-    				<p>version 1.0</p>
-    			</div>
-    		</div>
-    		<div class="span4">
-    			<div class="buckets">
-    				<a href="https://github.com/joshuapekera/awwwards-retina-ribbons" class="btn-cta">Fork</a>
-    				<p>on GitHub</p>
-    			</div>
-    		</div>
-    	</div>
-    	
-    	<hr class="divide">
-    	    	
-    	<footer>
-    		<div class="credit">Something by <a href="http://twitter.com/joshuapekera">Joshua Pekera</a></div>
-    		<div class="tweet">
-    			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://joshuapekera.github.com/awwwards-retina-ribbons/" data-text="A retina version of @awwwards ribbons for #responsive web design" data-via="joshuapekera" data-related="awwwards">Tweet</a>
-    			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    		</div>
-    	</footer>
+	<section id="social">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">
+					<p class="contactlead">Call, Email, Skype, Connect or Follow. All forms of digital stalking accepted. </p>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="contacticons">
+						<ul>
+							<li><a href="http://twitter.com/joshuapekera" class="fm-btn" id="fm-twitter" target="blank">Twitter</a></li>
+							<li><a href="http://fb.me/joshuapekera" class="fm-btn" id="fm-facebook" target="blank">Facebook</a></li>
+							<li><a href="http://www.linkedin.com/in/joshuaspekera" class="fm-btn" id="fm-linkedin" target="blank">LinkedIn</a></li>
+							<li><a href="http://dribbble.com/joshuapekera" class="fm-btn" id="fm-dribbble" target="blank">Dribbble</a></li>
+							<li><a href="http://forrst.me/joshuapekera" class="fm-btn" id="fm-forrst" target="blank">Forrst</a></li>
+							<li><a href="skype:joshuapekera?chat" class="fm-btn" id="fm-skype">Skype</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <div class="container">
+	    <footer>
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="tweet">
+						<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1346227337.html#_=1346295463225&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fjoshuapekera.com%2F&amp;size=m&amp;text=Joshua%20Pekera%20%C2%BB%20Pages&amp;url=http%3A%2F%2Fjoshuapekera.com%2F&amp;via=joshuapekera" class="twitter-share-button twitter-count-horizontal" style="width: 107px; height: 20px; " title="Twitter Tweet Button" data-twttr-rendered="true"></iframe>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+					<p class="copyright"><small>© 2012 Joshua Pekera</small></p>
+				</div>
+			</div>
+	    </footer>
     </div><!-- /container -->
+	</div> <!-- /view-main -->
+	<div class="view-slideout">
+		<li><a href="/" class=""><i></i>Home</a></li>
+		<li><a href="#" class="">Work</a></li>
+		<li><a href="#" class="">Labs</a></li>
+		<li><a href="#" class="">Journal</a></li>
+		<li><a href="#" class="">Contact</a></li>
+	</div>
     <!-- Javascript -->
     <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/modernizr.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/lib/rainbow/rainbow.min.js"></script>
-    <script src="js/lib/rainbow/language/generic.js"></script>
-    <script src="js/lib/rainbow/language/css.js"></script>
 </body>
 </html>

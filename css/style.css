@@ -17,14 +17,13 @@
 /* Global Site Styles
 ================================================== */
 body {
-	font-family:"Karla","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:"brandon-grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:400;
 	font-style:normal;
-	color:#3c4c51;
+	color:#1a1a1a;
 	font-size:15px;
 	line-height:15px;
-	padding-top: 0px;
-	background-color: #f7f9fa;
+	background-color: white;
 }
 
 /* Links */
@@ -38,7 +37,7 @@ a {
 	transition: color .4s linear;
 }
 a:hover, a:focus {
-	color: #5eab8d;
+	color: #86ac39;
 	text-decoration: none;
 }
 
@@ -59,12 +58,12 @@ p {}
 	vertical-align: middle;
 	padding-right: 20px;
 	padding-left: 20px;
-	background-color: #f7f9fa;
+	background-color: white;
 }
 
 .navbar-inner .container {
-	padding-top: 50px;
-	text-align: center;
+	padding: 50px;
+	text-align: left;
 }
 
 .navbar-fixed-top, .navbar-fixed-bottom {
@@ -72,36 +71,35 @@ p {}
 }
 
 .navbar .brand {
-	display: block;
-	float: none;
-	padding: 0;
-	margin-left: 0px;
-	font-family: Museo-300;
-	font-weight: normal;
+	font-family:"brandon-grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #9fa2a3;
+	font-size: 24px;
+	font-weight: 700;
 	font-style: normal;
-	font-size: 250%;
-	letter-spacing: normal;
+	letter-spacing: .12em;
+	text-transform: uppercase;
 	line-height: 1;
-	color: #3c4c51;
+	display: block;
+	float: left;
+	padding: 8px 20px 12px;
+	margin-left: 0px;
+	text-shadow: none;
 	-webkit-transition: color .4s linear;
 	-moz-transition: color .4s linear;
 	-o-transition: color .4s linear;
 	transition: color .4s linear;
 }
 
-.navbar a.brand {
-	background: url('../img/awwwardslogo.png') no-repeat;
-	height: 54px;
-	width: 300px;
-	margin: 0 auto;
-}
-
 .navbar .brand strong {
 	letter-spacing:-3px;
 }
 
-.navbar .btn-navbar{
-	float: left;
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: right;
+  margin: 0 10px 0 0;
 }
 
 .navbar-fixed-top {
@@ -111,9 +109,61 @@ p {}
 
 /* Global Nav */
 
+.navbar .nav > li {
+  float: left;
+}
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #9fa2a3;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #86ac39;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #555555;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
+.navbar .btn-navbar{
+	background-color: none;
+	float: right;
+}
+
+a.plus {
+	display: none;
+	
+}
+
 
 /* Page Slide */
-#pageslide {
+
+.view-slideout {
+	display: none;
+}
+
+/* end slideout */
+
+
+#slideout {
 /* These styles MUST be included. Do not change. */
 	display:none;
 	position:absolute;
@@ -121,10 +171,10 @@ p {}
 	top:0;
 	height:100%;
 	z-index:999999;
-/* Specify the width of your pageslide here */
+/* Specify the width of your slideout here */
 	width:200px;
 	padding:0;
-/* These styles are optional, and describe how the pageslide will look */
+/* These styles are optional, and describe how the slideout will look */
 	background-color:#333;
 	color:#FFF;
 	border-right:solid 1px #242424
@@ -165,13 +215,23 @@ p {}
 /* Home Page
 ---------------- */
 
+#social {
+	background-color: #25282a;
+	width: 100%;
+	height: 400px;
+}
+
 .hero-unit {
-	background: transparent;
+	background: white;
 	text-align: center;
 	margin-top: 0px;
+	margin-bottom: 0px;
 	padding: 0px 0px 0px 0px;
 	position: relative;
 	text-align: center;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 }
 
 .featurewrapper {
@@ -276,24 +336,18 @@ hr.divide {
 ================================================== */
 footer {
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 60px;
 	margin-bottom: 20px;
 	font-size: 14px;
 	color: #a0a1a2;
 }
 
-.credit {
-	margin-right: 20px;
-	display: inline-block;
-	position: relative;
-	vertical-align: text-top;
-	line-height: 43px;
+.copyright {
+	text-align: right;
 }
 
 .tweet {
-	display: inline-block;
-	position: relative;
-	height: 2px;
+	float: left;
 }
 
 /* Elements
@@ -399,9 +453,81 @@ a.btn-cta {
 
 body {
 	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+section#social {
+	margin: 0 -20px 0 -20px;
+	padding: 0 20px 0 20px;
+}
+
+.navbar-inner {
+	min-height: 50px;
+}
+
+.navbar-inner .container {
+	padding: 0px;
+	text-align: center;
+}
+
+.navbar .brand {
+	text-align: center;
+	float: none;
+	padding: 15px 15px 0px 15px;
+	margin: 0 auto;
+	font-size: 24px;
+	letter-spacing: .05em;
+}
+
+.hero-unit {
+	margin: 0 -20px;
 }
 
 /* Globalnav Page slide */
+
+a.plus {
+	display: block;
+	position: absolute;
+	background-image: url('../img/open.png');
+	background-repeat: no-repeat;
+	height: 21px;
+	width: 21px;
+	top: 20px;
+	right: 15px;
+}
+
+}
+
+/* Mobile Devices Landscape Specific
+----------------------------------------*/
+@media (min-width: 480px) and (max-width: 767px) {
+/* Styles */
+.navbar .brand {
+	font-size: 22px;
+	letter-spacing: .05em;
+}
+
+ul#globalnav {
+	display:none
+}
+
+}
+
+/*:::PRIMARY:::*//* Landscape phones and down 
+---------------------------------------------------------------------*/
+@media (max-width: 480px) {
+/* Styles */
+
+/* Globalnav Page slide */
+
+.view-slideout {}
+
+.nav-collapse .nav {
+	float: none;
+	margin: 0 0 10px;
+}
+
 ul#globalnav {
 	display:none
 }
@@ -410,11 +536,11 @@ ul#globalnav {
 	display:block
 }
 
-#pageslide {
+#slideout {
 	width:200px
 }
 
-#pageslide ul#globalnav {
+#slideout ul#globalnav {
 	width:auto;
 	border-radius:0;
 	-webkit-border-radius:0;
@@ -434,7 +560,7 @@ ul#globalnav {
 	background-color:transparent
 }
 
-#pageslide ul#globalnav li {
+#slideout ul#globalnav li {
 	padding:0;
 	margin:0 20px;
 	list-style:none;
@@ -442,12 +568,12 @@ ul#globalnav {
 	float:none
 }
 
-#pageslide ul#globalnav li:active {
+#slideout ul#globalnav li:active {
 	-webkit-tap-highlight-color:green;
 	background-color:#222
 }
 
-#pageslide ul#globalnav li a.navtext {
+#slideout ul#globalnav li a.navtext {
 	position:relative;
 	bottom:0;
 	color:#848484;
@@ -468,32 +594,17 @@ ul#globalnav {
 	text-align:left
 }
 
-#pageslide ul#globalnav li a.navtext:hover {
+#slideout ul#globalnav li a.navtext:hover {
 	text-decoration:none;
 	color:#fff
 }
 
-#pageslide ul#globalnav li a.navtext.active {
+#slideout ul#globalnav li a.navtext.active {
 	text-decoration:none;
 	color:#fff
 }
-}
 
-/* Mobile Devices Landscape Specific
-----------------------------------------*/
-@media (min-width: 480px) and (max-width: 767px) {
-/* Styles */
-}
-
-/*:::PRIMARY:::*//* Landscape phones and down 
----------------------------------------------------------------------*/
-@media (max-width: 480px) {
-/* Styles */
-	.navbar a.brand {
-		background-size: 270px 49px;
-		height: 49px;
-		width: 270px;
-	}
+/* end slideout */
 }
 
 /*:::PRIMARY:::*//* Portrait tablet to landscape and desktop 
@@ -548,11 +659,11 @@ and (orientation : portrait) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
-	.navbar a.brand {
-		background: url('../img/awwwardslogo2x.png') no-repeat;
-		background-size: 270px 49px;
-		height: 49px;
-		width: 270px;
+	a.plus {
+		background: url('../img/open@2x.png') no-repeat;
+		background-size: 21px 21px;
+		height: 21px;
+		width: 21px;
 	}
 }
 
@@ -560,13 +671,6 @@ only screen and (min-device-pixel-ratio : 1.5) {
 /* Font-Face
 ================================================== */
 /* Hide text while web fonts are loading */
-@font-face {font-family: 'Museo-300';src: url('../webfonts/23CBA0_0_0.eot');src: url('../webfonts/23CBA0_0_0.eot?#iefix') format('../embedded-opentype'),url('../webfonts/23CBA0_0_0.woff') format('woff'),url('../webfonts/23CBA0_0_0.ttf') format('truetype');}
-
-.Museo-300 { 
-	font-family: Museo-300;
-	font-weight: normal;
-	font-style: normal;
-}
 
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading p, .wf-loading a { visibility: hidden; }
 
