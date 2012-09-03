@@ -1,6 +1,5 @@
 /*
- * Awwards Demo Github Page by Joshua Pekera
- * This is for the demo page only and has a lot of uncessasry style for implimenting the Awwwards retina banners. I would not recommend using anything in this file.
+ * Theme by Joshua Pekera
 */
 
 /* Table of Content
@@ -16,15 +15,36 @@
 
 /* Global Site Styles
 ================================================== */
+html {
+    font-family: Helvetica;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 body {
-	font-family:"brandon-grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:'proxima-nova',"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight:400;
 	font-style:normal;
 	color:#1a1a1a;
 	font-size:15px;
 	line-height:15px;
+	letter-spacing: normal;
 	background-color: white;
 }
+
+footer {
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 14px;
+	color: #a0a1a2;
+	background-color: white;
+}
+
+/* Fixed Footer Bottom */
 
 /* Links */
 a {
@@ -81,7 +101,7 @@ p {}
 	line-height: 1;
 	display: block;
 	float: left;
-	padding: 8px 20px 12px;
+	padding: 8px 0px 12px;
 	margin-left: 0px;
 	text-shadow: none;
 	-webkit-transition: color .4s linear;
@@ -95,34 +115,35 @@ p {}
 }
 
 .navbar .nav {
-  position: relative;
-  left: 0;
-  display: block;
-  float: right;
-  margin: 0 10px 0 0;
+	position: relative;
+	left: 0;
+	display: block;
+	float: right;
+	margin: 0 10px 0 0;
 }
 
 .navbar-fixed-top {
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 
 /* Global Nav */
 
 .navbar .nav > li {
-  float: left;
+	float: left;
 }
 
 .navbar .nav > li > a {
-  float: none;
-  padding: 10px 15px 10px;
-  color: #9fa2a3;
-  font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  text-decoration: none;
-  text-shadow: none;
-  text-transform: uppercase;
+	font-family:'proxima-nova',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	float: none;
+	padding: 10px 15px 10px;
+	color: #9fa2a3;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: uppercase;
 }
 
 .navbar .nav > li > a:focus,
@@ -143,46 +164,313 @@ p {}
           box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
 
-.navbar .btn-navbar{
-	background-color: none;
-	float: right;
+.nav li a.homeicn, .nav li a.workicn, .nav li a.labsicn, .nav li a.blogicn, .nav li a.contacticn {
+	display: block;
+	position: relative;
+	text-indent: -9999px;
+	background-image: url('../img/icons.png');
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 24px;
+	padding: 0;
+	margin: 6px 15px 0 15px;
 }
 
-a.plus {
-	display: none;
-	
+.nav li a.homeicn {
+	background-position: -12px -12px;
+}
+.nav li a.workicn {
+	background-position: -60px -12px;
+}
+
+.nav li a.labsicn {
+	background-position: -108px -12px;
+}
+
+.nav li a.blogicn {
+	background-position: -156px -12px;
+}
+
+.nav li a.contacticn {
+	background-position: -204px -12px;
+}
+
+/* Viewport Slideout */
+
+body.menu-open #page {
+    position: absolute;
+    /* -webkit-transform: translate3d(260px, 0, 0); */
+    -webkit-transform: translateX(-220px);
+    /* overflow:hidden; */
 }
 
 
-/* Page Slide */
-
-.view-slideout {
-	display: none;
+#close-mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background: transparent;
+    -webkit-tap-highlight-color: none;
+    /* box-shadow: inset 10px 10px 0 0 rgba(255,255,255,1); */
 }
 
-/* end slideout */
+#page {
+    position: relative;
+    /* min-width: 240px; */
+    background-color: #fff;
+    z-index: 2;
+    -webkit-transition: -webkit-transform 200ms ease-in;
+}
+    #page > header {
+        height: 43px;
+        line-height: 43px;
+        background: -webkit-gradient( linear, left top, left bottom, from(#738ABA), to(#2C4987) );
+        border-color: #111A33;
+        -webkit-box-shadow: inset 0 1px 1px -1px white, 0 1px 5px rgba(0,0,0,.5);
+        -webkit-transition: left 200ms ease-in;
+    }
+    #page > header .plus {
+    	display: none;
+    	position: absolute;
+    	background-image: url('../img/open.png');
+    	background-repeat: no-repeat;
+    	height: 21px;
+    	width: 21px;
+    	top: 20px;
+    	right: 20px;
+    	vertical-align: middle;
+    }
+    #page > header .icons {
+        position: absolute;
+        left: 50%;
+        margin-left: -72px;
+        top: 9px;
+    }
+    #page > header .icons > span {
+        display: inline-block;
+        padding: 0 8px;
+    }
 
-
-#slideout {
-/* These styles MUST be included. Do not change. */
-	display:none;
-	position:absolute;
-	position:fixed;
-	top:0;
-	height:100%;
-	z-index:999999;
-/* Specify the width of your slideout here */
-	width:200px;
-	padding:0;
-/* These styles are optional, and describe how the slideout will look */
-	background-color:#333;
-	color:#FFF;
-	border-right:solid 1px #242424
+    #page .story {
+        position: relative;
+        padding: 7px;
+        border-top: 1px solid #E9E9E9;
+        background-color: #fff;
+    }
+    #page .story > img {
+        position: absolute;
+    }
+    #page .story .contents {
+        margin-left: 50px;
+    }
+    #page .story .contents .name {
+        font-size: 14px;
+        color: #3B5998;
+        text-decoration: none;
+    }
+    #page .story .contents .actions {
+        color: gray;
+        margin: 6px 25px 3px 0;
+        
+        font-size: 12px;
+        line-height: 15px;
+    }
+    #page .story .contents .meta {
+        position: relative;
+        margin-top: 12px;
+        padding: 4px 0 4px 9px;
+        background: #EDEFF4;
+        border-bottom: 1px solid #E5EAF1;
+        border-top: 1px solid #EDEFF4;
+        font-weight: bold;
+        color: #3B5998;
+    }
+    #page .story .contents .meta::after {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: 10px;
+        border-style: solid;
+        border-width: 0 8px 8px;
+        border-color: #EDEFF4 transparent;
+        display: block;
+        width: 0;
+    }
+    #page .story .contents .meta span {
+        padding-right: 10px;
+    }
+    #page .story .contents .meta span img {
+        vertical-align: text-bottom;
+    }
+    
+#composer {
+    display: -webkit-box;
+    display: box;
+    box-orient: horizontal;
+    padding: 7px 4px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #CCC;
+}
+#composer button {
+    display: block;
+    margin: 0 4px;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #505C77;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .6);
+    border: 1px solid;
+    border-color: #9599A1 #A8ABB4 #ACB1BB;
+    -webkit-box-shadow: inset 0 1px 1px rgba(43, 48, 60, .18), 0 1px 0 white;
+    background: -webkit-gradient( linear, left top, left bottom, from(#FDFEFE), to(#F0F1F2) );
+    -webkit-background-clip: padding-box;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 27px;
+    min-width: 50px;
+}
+#composer button img {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    margin-right: 1px;
+    vertical-align: text-top;
 }
 
-.open {
-	display:none;
+#menu {
+    display: block;
+    position: absolute;
+    width: 220px;
+    top: 0;
+    right: 0;
+    background: #25282a;
+   /*  min-height: 300px; */ 
+    /* z-index: 10; */
+    /* height: 100%; */
+	-webkit-box-shadow: inset 40px 0px 40px -30px rgba(0,0,0,1);
 }
+
+    #menu > header {
+        padding: 0 8px;
+        width: 220px;
+        height: 43px;
+        background-image: -webkit-gradient( linear, left top, left bottom, from(#434B5B), to(#242B39));
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #5F6673;  
+        color: #fff;
+    }
+
+    #menu #search {
+        position: relative;
+        top: 6px;
+        width: 100%;
+        padding: 2px 8px 0 10px;
+        background: -webkit-gradient( linear, 0 0, 0 100%, from(#414A5A), to(#4C5464));
+        color: #AAB2C0;
+        border: 1px solid #222936;
+        -webkit-border-radius: 15px;
+        -webkit-box-shadow: inset 0 1px 2px -1px rgba(0, 0, 0, .5), 0 1px 2px -1px rgba(255, 255, 255, .4);
+        height: 27px;
+        outline: none;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    #menu #search::-webkit-input-placeholder {
+        color: #AAB2C0;
+        font-weight: normal;
+    }
+
+    #menu .scrollable {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        /* overflow-y: scroll; */
+        /* -webkit-overflow-scrolling: touch; */
+    }
+    #menu .separator {
+        background: #434B5C;
+        background: -webkit-gradient( linear, left top, left bottom, from(#434B5C), to(#394152) );
+        border-bottom: 1px solid #242A37;
+        border-top: none;
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08);
+        color: #7A8292;
+        padding: 4px 0 4px 8px;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, .6);
+        font-size: 10px;
+        line-height: 12px;
+        text-transform: uppercase;
+    }
+    
+    #menus ul {
+	    
+    }
+    
+    #menu li {
+        position: relative;
+        display: block;
+        list-style: none;
+        min-height: 44px;
+        line-height: 44px;
+        padding: 3px 0 3px 8px;     
+        background-color: transparent;
+        border-bottom: 1px solid #181b1c;
+        -webkit-box-shadow: inset 0 1px 1px 0px #373c40;
+        font-size: 16px;
+        color: #C4CCDA;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, .6);
+    }
+    
+    #menu li:first-child {
+    	border-top: solid 1px #181b1c;
+	    -webkit-box-shadow: inset 0 1px 1px 0px #373c40;
+    }
+    
+    #menu li a {
+	    color: white;
+	    display: block;
+	    position: relative;
+    }
+    
+    #menu .active {
+        box-shadow: inset 0 2px 2px 2px rgba(0,0,0,1);
+    }
+    #menu li img {
+        vertical-align: middle;
+        display: block;
+        float: left;
+        margin: 10px 10px 0 0;
+    }
+    #menu li .count {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        background: #3E485E;
+        background: -webkit-gradient( linear, left top, left bottom, color-stop(0, #3E485E), color-stop(1, #323A4D));
+        border-top: 1px solid #505A63;
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+        color: #BFC5D2;
+        padding: 1px 3px 3px 4px;
+        display: inline-block;
+        line-height: 12px;
+        min-width: 11px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, .6);
+    }
+    #menu li#copy {
+        padding: 10px 8px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #menu li#copy p {
+        font-weight: 400;
+    }
 
 
 /* Side Nav
@@ -234,113 +522,8 @@ a.plus {
 	border-radius: 0px;
 }
 
-.featurewrapper {
-	position: relative;
-	max-width: 919px;
-	margin: 0 auto;
-}
-
-img.browser {
-	position: relative;
-}
-
-img.ribbons {
-	z-index: 10;
-	left: 0;
-	top: 0;
-	position: absolute;
-}
-
-img.ribbon-white {
-	z-index: 10;
-	left: 0;
-	top: 0;
-	position: absolute;
-}
-
-img.ribbon-black {
-	z-index: 11;
-	left: 0;
-	top: 0;
-	position: absolute;
-}
-
-img.ribbon-green {
-	z-index: 12;
-	left: 0;
-	top: 0;
-	position: absolute;
-}
-
-img.retina {
-	z-index: 9;
-	left: 0;
-	top: 0;
-	position: absolute;
-}
-
-.buckets {
-	margin-top: 30px;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.buckets p {
-	text-align: center;
-	padding-top: 15px;
-	color: #cacbcc;
-	font-family: Georgia, sans-serif;
-	font-style: italic;
-}
-
-.buckets img {
-	display: block;
-	margin: 0 auto;
-	padding-bottom: 0px;
-}
-
-/* Demo Page
----------------- */
-
-.wrapper {
-	position: relative;
-	max-width: 270px;
-	margin: 0 auto;
-}
-
-img.holder {
-	margin-top: 60px;
-	margin-bottom: 0px;
-}
-
-img.awwwshadow {
-	position: absolute;
-	left: 0;
-	top:60px;
-	z-index: 2;
-}
-
-img.awwwicon {
-	position:absolute;
-	left: 0;
-	top: 60px;
-	z-index: 4;
-
-}
-
-hr.divide {
-	margin-top: 60px;
-	margin-bottom: 20px;
-}
 /* Footer
 ================================================== */
-footer {
-	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 20px;
-	font-size: 14px;
-	color: #a0a1a2;
-}
 
 .copyright {
 	text-align: right;
@@ -457,9 +640,31 @@ body {
 	padding-right: 20px;
 }
 
+.push {
+    height: 63px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    background-color: white;
+}
+
+/*
+#page {
+	display: block;
+	margin: 0 -20px;
+	padding: 0 20px;
+}
+*/
 section#social {
 	margin: 0 -20px 0 -20px;
 	padding: 0 20px 0 20px;
+}
+
+footer {
+	margin: 0px -20px 0px -20px;
+	padding: 30px 20px 30px 20px;
 }
 
 .navbar-inner {
@@ -472,11 +677,11 @@ section#social {
 }
 
 .navbar .brand {
-	text-align: center;
+	text-align: left;
 	float: none;
-	padding: 15px 15px 0px 15px;
+	padding: 18px 15px 0px 15px;
 	margin: 0 auto;
-	font-size: 24px;
+	font-size: 20px;
 	letter-spacing: .05em;
 }
 
@@ -494,7 +699,8 @@ a.plus {
 	height: 21px;
 	width: 21px;
 	top: 20px;
-	right: 15px;
+	right: 0px;
+	vertical-align: middle;
 }
 
 }
@@ -508,8 +714,8 @@ a.plus {
 	letter-spacing: .05em;
 }
 
-ul#globalnav {
-	display:none
+.navbar .nav {
+	display: none;
 }
 
 }
@@ -518,6 +724,13 @@ ul#globalnav {
 ---------------------------------------------------------------------*/
 @media (max-width: 480px) {
 /* Styles */
+
+/* Fixed Footer */
+/*
+.wrapper {
+	height:auto;
+}
+*/
 
 /* Globalnav Page slide */
 
@@ -659,12 +872,38 @@ and (orientation : portrait) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
-	a.plus {
-		background: url('../img/open@2x.png') no-repeat;
-		background-size: 21px 21px;
-		height: 21px;
-		width: 21px;
-	}
+a.plus {
+	background: url('../img/open@2x.png') no-repeat;
+	background-size: 21px 21px;
+	height: 21px;
+	width: 21px;
+}
+
+nav li a.homeicn, .nav li a.workicn, .nav li a.labsicn, .nav li a.blogicn, .nav li a.contacticn {
+background-image: url('../img/icons@2x.png');
+background-size: 24px 24px;
+height: 24px;
+width: 24px;
+}
+
+.nav li a.homeicn {
+	background-position: -12px -12px;
+}
+.nav li a.workicn {
+	background-position: -60px -12px;
+}
+
+.nav li a.labsicn {
+	background-position: -108px -12px;
+}
+
+.nav li a.blogicn {
+	background-position: -156px -12px;
+}
+
+.nav li a.contacticn {
+	background-position: -204px -12px;
+}
 }
 
 
@@ -673,4 +912,3 @@ only screen and (min-device-pixel-ratio : 1.5) {
 /* Hide text while web fonts are loading */
 
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading p, .wf-loading a { visibility: hidden; }
-
