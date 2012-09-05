@@ -113,7 +113,6 @@ function determineSwipeDirection() {
 	}
 }
 
-/*
 function processingRoutine() {
 	var swipedElement = document.getElementById(triggerElementID);
 	if ( swipeDirection == 'left' ) {
@@ -130,4 +129,3 @@ function processingRoutine() {
 		swipedElement.style.backgroundColor = 'purple';
 	}
 }
-*/

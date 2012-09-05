@@ -348,9 +348,9 @@ body.menu-open #page {
     width: 220px;
     top: 0;
     right: 0;
-    background: #25282a;
+    background-color: #25282a;
    /*  min-height: 300px; */ 
-    /* z-index: 10; */
+   /*  z-index: 10; */
     /* height: 100%; */
 	-webkit-box-shadow: inset 40px 0px 40px -30px rgba(0,0,0,1);
 }
@@ -398,16 +398,14 @@ body.menu-open #page {
         border-bottom: 1px solid #242A37;
         border-top: none;
         -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08);
-        color: #7A8292;
+        color: white;
         padding: 4px 0 4px 8px;
+        margin-left: 0px;
+        text-indent: 20px;
         text-shadow: 0 1px 0 rgba(0, 0, 0, .6);
         font-size: 10px;
         line-height: 12px;
         text-transform: uppercase;
-    }
-    
-    #menus ul {
-	    
     }
     
     #menu li {
@@ -471,7 +469,70 @@ body.menu-open #page {
     #menu li#copy p {
         font-weight: 400;
     }
+    
+    #menu .slideout-contact ul li {
+    	display: block;
+    }
 
+
+/* Slide-Out Nav
+================================================== */
+
+img.so-home {
+	height: 25px;
+	width: 24px;
+}
+
+img.so-work {
+	height: 21px;
+	width: 24px;
+}
+
+img.so-labs {
+	height: 25px;
+	width: 20px;
+	padding: 2px;
+}
+
+img.so-blog {
+	height: 25px;
+	width: 24px;
+}
+
+img.so-contact {
+	height: 23px;
+	width: 24px;
+}
+
+img.so-twitter {
+	height: 25px;
+	width: 24px;
+}
+
+img.so-facebook {
+	height: 25px;
+	width: 24px;
+}
+
+img.so-linkedin {
+	height: 25px;
+	width: 24px;
+}
+
+img.so-dribbble {
+	height: 25px;
+	width: 24px;
+}
+
+img.so-forrst {
+	height: 25px;
+	width: 24px;
+}
+
+img.so-skype {
+	height: 25px;
+	width: 24px;
+}
 
 /* Side Nav
 ================================================== */
@@ -503,12 +564,6 @@ body.menu-open #page {
 /* Home Page
 ---------------- */
 
-#social {
-	background-color: #25282a;
-	width: 100%;
-	height: 400px;
-}
-
 .hero-unit {
 	background: white;
 	text-align: center;
@@ -520,7 +575,72 @@ body.menu-open #page {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
+	border-bottom: 1px solid #c8c5c2;
 }
+
+hr.wood {
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #de934d;
+	border-bottom: 1px solid #ffd293;
+}
+
+hr.wood-bottom {
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #de934d;
+}
+
+#content {
+	text-align: center;
+	color: #54575a;
+	background-color: whitesmoke;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: whitesmoke;
+	background: url('../img/wood.png');
+	background-repeat: repeat;
+	
+}
+
+	#content h2 {
+		font-family: "brandon-grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
+		color: white;
+		font-weight: 700;
+		font-size: 20px;
+		font-style: normal;
+		text-shadow: 0px 1px 0px #97764f;
+		text-transform: uppercase;
+		
+	}
+	
+#contact-me {
+	background-color: white;
+}	
+	
+.design-work ul {
+	display: inline-block;
+}
+
+a.design-graphic {
+	background-image: url('../img/album.png');
+	background-repeat: no-repeat;
+	height: 185px;
+	width: 251px;
+	display: block;
+}
+	a.design-graphic img {
+		padding-top: 19px;
+		max-height: 147px;
+		max-width: 213px;	
+	}
+	
+.contact-icons ul li {
+	list-style: none;
+	display: inline-block;
+}
+
 
 /* Footer
 ================================================== */
@@ -650,14 +770,12 @@ body {
     background-color: white;
 }
 
-/*
-#page {
-	display: block;
-	margin: 0 -20px;
-	padding: 0 20px;
+section {
+	margin: 0 -20px 0 -20px;
+	padding: 0 20px 0 20px;
 }
-*/
-section#social {
+
+hr.wood, hr.wood-bottom {
 	margin: 0 -20px 0 -20px;
 	padding: 0 20px 0 20px;
 }
@@ -702,6 +820,25 @@ a.plus {
 	right: 0px;
 	vertical-align: middle;
 }
+
+/* Design Work Thumbnails */
+	
+.design-work ul li {
+	display: block;
+}
+
+a.design-graphic {
+	background-image: url('../img/album.png');
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+	a.design-graphic img {
+		position: absolute;
+		top:0;
+		left:19px;
+	}
+		
 
 }
 
@@ -872,6 +1009,12 @@ and (orientation : portrait) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
+
+#content {
+	background: url('../img/wood@2x.png');
+	background-size: 203px 317px;
+}
+
 a.plus {
 	background: url('../img/open@2x.png') no-repeat;
 	background-size: 21px 21px;
@@ -904,6 +1047,11 @@ width: 24px;
 .nav li a.contacticn {
 	background-position: -204px -12px;
 }
+
+a.design-graphic {
+	background-image: url('../img/album@2x.png');
+	/* background-size: 251px 185px; */
+	background-size: 100%;
 }
 
 
