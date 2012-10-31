@@ -1356,11 +1356,3 @@ a.btn-cta {
   src: url(../fonts/proxima-nova/proximanova-extrabold-webfont.eot?1307578394);
   src: url('../fonts/proxima-nova/proximanova-extrabold-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-extrabold-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-extrabold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-extrabold-webfont.svg#webfont2rpW2ohz') format('svg');
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Proxima", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-}
