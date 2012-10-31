@@ -1,0 +1,308 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--<![endif]-->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+	<meta charset="utf-8">
+  	<!-- You can use .htaccess and remove these lines to avoid edge case issues. -->
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<title>Process | my workflow for building this site | Joshua Pekera</title>
+  	<meta name="author" content="Joshua Pekera">
+  	<meta name="description" content="UX designer and front end developer">
+  	<meta name="keywords" content="ux design, developer, digital prodcuer">
+  	<!-- Mobile viewport optimized -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  	<meta name="description" content="I want to work at Baldwin&">
+	<meta name="keywords" content="baldwin, résumé, responsive, fluid">
+	<meta name="robots" content="index,follow">
+	<meta name="author" content="Joshua Pekera">	
+	<!-- Set a base location for assets -->
+	<!-- <base href="http://joshuapekera.com/"/> -->
+	<!-- End base -->
+	<!-- TypeKit Async -->
+	<script type="text/javascript">
+	  (function() {
+	    var config = {
+	      kitId: 'udw5yxg',
+	      scriptTimeout: 3000
+	    };
+	    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/( |^)wf-loading( |$)/g,"");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script");tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(a&&a!="complete"&&a!="loaded")return;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+	  })();
+	</script>
+	
+	<!-- Le styles -->
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/fluid.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Le fav and touch icons -->
+	<link rel="shortcut icon" href="assets/ico/fav.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/touch-144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/touch-72.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/touch-58.png">
+	
+	<style type="text/css">
+		/* Hide text while web fonts are loading */
+		.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading p, .wf-loading a { visibility: hidden; }
+	</style>
+	
+	<!-- Google Analytics & Social Tracking -->
+	<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-30476296-3']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+			
+	</script>
+	<script type="text/javascript" src="assets/js/socialtracking.js"></script>
+</head>
+	
+<body>
+<div id="fb-root"></div>
+
+<div id="viewport">
+	
+	<aside id="menu" class="">
+		<div class="scrollable">
+			<ul>
+				<li><a href="/"><img src="assets/img/icon-blank@2x.png" class="so-home" alt="icon">Home</a></li>
+				<li><a href="/coverletter.html" class="" id="tab-home"><img src="assets/img/icon-blank@2x.png" class="so-home" alt="icon">Cover Letter</a></li>
+				<li><a href="/resume.html" class="" id="tab-resume"><img src="assets/img/icon-blank@2x.png" class="so-home" alt="icon">Resume</a></li>
+				<li><a href="/portfolio.html" class="" id="tab-portfolio"><img src="assets/img/icon-blank@2x.png" class="so-home" alt="icon">Portfolio</a></li>
+				<li><a href="/process.html" class="" id="tab-process"><img src="assets/img/icon-blank@2x.png" class="so-home" alt="icon">Process</a></li>
+				<li><a href="/contact.html" class="" id="tab-contact"><img src="assets/img/icon-blank@2x.png" class="so-home" alt="icon">Contact</a></li>
+			</ul>
+			<div class="separator">Follow Me</div>
+			<ul>
+				<li><a href="http://twitter.com/joshuapekera" class="" id="tab-twitter" target="blank"><img src="assets/img/icon-twitter@2x.png" class="so-twitter" alt="icon-twitter">Twitter</a></li>
+				<li><a href="http://fb.me/joshuapekera" class="" id="tab-facebook" target="blank"><img src="assets/img/icon-fb@2x.png" class="so-facebook" alt="icon-facebook">Facebook</a></li>
+				<li><a href="http://www.linkedin.com/in/joshuaspekera" class="" id="tab-linkedin" target="blank"><img src="assets/img/icon-linkedin@2x.png" class="so-linkedin" alt="icon-linkedin">LinkedIn</a></li>
+				<li><a href="http://dribbble.com/joshuapekera" class="" id="tab-dribbble" target="blank"><img src="assets/img/icon-dribbble@2x.png" class="so-dribbble" alt="icon-dribbble">Dribbble</a></li>
+				<li><a href="http://forrst.me/joshuapekera" class="" id="tab-forrst" target="blank"><img src="assets/img/icon-forrst@2x.png" class="so-forrst" alt="icon-forrst">Forrst</a></li>
+				<li><a href="skype:joshuapekera?chat" class="" id="tab-skype"><img src="assets/img/icon-skype@2x.png" class="so-skype" alt="icon-skype">Skype</a></li>
+			</ul>
+			<div class="separator">© 2012 Joshua Pekera</div>
+		</div>
+	</aside> <!--/ menu -->
+	
+	<div id="page">
+		<div class="wrapper">
+			<div id="close-mask"></div>
+			<header class="" id="overview">
+				<div class="container">
+					<a class="plus visible-phone"></a>
+					<a class="brand" id="logo" href="#"></a>
+					<p>I want to join your team</p>
+					<nav>
+						<a href="/" class="navtext active">Home</a>
+						<a href="/coverletter.html" class="navtext">Cover Letter</a>
+						<a href="/resume.html" class="navtext">Resume</a>
+						<a href="/portfolio.html" class="navtext">Portfolio</a>
+						<a href="/process.html" class="navtext">Process</a>
+						<a href="/contact.html" class="navtext">Contact</a>
+					</nav>
+				</div>
+			</header>
+	
+			<div class="container">
+				<hr>
+				<div class="crumb">
+					<div class="row-fluid">
+						<div class="span12">
+							<h1>Process</h1><small>A thing or two about this site.</small>
+						</div>
+					</div>
+				</div>
+				<hr>	
+				
+				<div class="canvas animated fadeIn" id="processcanvas"> <!-- start canvas -->
+				
+				<!-- Feature Graphic
+					================================================== -->
+					<section id="featureproduct">
+							<div class="row-fluid">
+								<div class="span12">
+									<div class="processfeature">
+										<img src="assets/img/process-feature2x.jpg" width="621" height="290" alt="Responsive Product"/>
+										<h1>Desktop, Tablet or Mobile</h1>
+										<small>A responsive product that looks even better with a retina display.</small>
+									</div>
+								</div>
+							</div>
+					</section>
+					
+				</div><!-- end canvas -->
+				
+				<div class="canvas paper-green animated fadeIn" id="inspirationtitlebanner">
+						
+					<!-- Section Process
+					================================================== -->
+					<section id="inspirationbanner">
+						<div class="row-fluid">
+							<div class="span12 banner">
+								<h2>Inspiration</h2>
+							</div>	
+						</div>
+					</section>
+				
+				</div><!-- end green paper -->
+				
+				<div class="paper animated fadeIn" id="inspirationcanvas"> <!-- start paper -->
+				
+				<!-- Section Inspiration
+					================================================== -->
+					<section id="inspiration">
+						<div class="page-header">
+							<div class="row-fluid">
+								<div class="span2 phantom">&nbsp;</div>
+								<div class="span8">
+									<p>When I decided to apply to Luckie I knew I would need to make an impression. So what would impress people at Luckie?  A few days after deciding I would apply, I read a blog post by Luckie's Director of Human Resources, Melissa Wheeler. The post was entitled, <a href="http://luckierethinktank.com/2011/07/applying-for-a-job-heres-what-not-to-do/">"Applying For a Job? Here's What Not to Do"</a>. The article was full of common sense tips for your typical recent college graduate. Even though I am far from being a recent college graduate I found the post very helpful. There was something Melissa said that caught my attention. She said candidates should,</p>
+								</div>
+								<div class="span2 phantom">&nbsp;</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span1 phantom">&nbsp;</div>
+								<div class="span10">
+									<blockquote cite="http://luckierethinktank.com/2011/07/applying-for-a-job-heres-what-not-to-do/">&ldquo;Follow our blog, check our website – do some homework. I love candidates who make an effort to tailor their resume to a specific job position and tell us how their skills will benefit the agency.&rdquo;</blockquote>
+								</div>
+								<div class="span1 phantom">&nbsp;</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span2 phantom">&nbsp;</div>
+								<div class="span8">
+									<p>My initial inspiration to create this product came to me after reading that post. What better way to apply for a position? This product is my resume, but it also is an example of everything my resume says I know how to do. It is specifically tailored for the position I want at Luckie and it illustrates how my skills will benefit the agency.</p>
+								</div>
+								<div class="span2 phantom">&nbsp;</div>
+							</div>
+						</div>
+					</section>
+					
+				</div><!-- end paper -->
+				
+				<div class="canvas paper-green animated fadeIn" id="productdesignbanner">
+									
+				<!-- Section Planning Banner
+				================================================== -->
+					<section id="productdesigntitle">
+						<div class="row-fluid">
+							<div class="span12 banner">
+								<h2>Product Design</h2>
+							</div>	
+						</div>
+					</section>
+					
+				</div><!-- end green paper -->
+				
+				<div class="paper animated fadeIn" id="productdesigncanvas">
+				
+				<!-- Section Planning Process
+					================================================== -->
+					<section id="productdesign">
+						<div class="page-header">
+							<div class="row-fluid">
+								<div class="span12">
+									<h3>UX Design</h3>
+									<p>A top notch user experience does not happen by accident. UX design encompasses a plethora of disciplines. Team members should all have a basic knowledge of each discipline and how all are effected by their area of expertise. I work through a process that is multilevel. It is an iterative process that thrives in a team setting by focusing on Strategy, Scope, Structure, Skeleton and Surface. Each level builds on the previous one, but allows for overlap in order to refine a product until completion. I would be happy to discuss this process in more detail with anyone that is interested. I listed a number of ways to <a href="/contact.html">contact  me here</a>.</p>
+									
+									<h3>Resources &amp; Credit</h3>
+									<p>I am an advocate of open source software. I try to contribute as often as I can to open source initiatives. Most developers establish their own standard methods and tools they like to use in their products. I am no different than most. Here is a list of some of the tools I used in this product. Please take a look and experiment with some of them.</p>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12 subcontent">
+									<h4>HTML5 Boilerplate</h4>
+									<p>The primary goal of Boilerplate is to help a developer deliver a solid user experience across any OS, browser and device. It is a collection of best practices for HTML5. It helps a developer establish a solid foundation for a new product. It includes CSS resets, graceful degradation for legacy browsers, cross-browser fixes, .htaccess configurations and a whole lot more.</p>
+									<a href="http://html5boilerplate.com" target="_blank">Check it out  &rsaquo;</a>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12 subcontent">
+									<h4>Twitter Bootstrap</h4>
+									<p>Bootstrap is a starting library of HTML, CSS and Javascript resources. A number of things are packed into the framework, but the most useful is the out of the box configuration for fluid development. Responsive web design requires an iterative design process. Bootstrap is ideal for this because you can begin prototyping and testing content from day one of a project.</p>
+									<a href="http://twitter.github.com/bootstrap/" target="_blank">Check it out  &rsaquo;</a>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12 subcontent">
+									<h4>Animate.css</h4>
+									<p>The days of fully Flash sites are over. We have little need for it thanks to the explosion of mobile browsing and progressive browsers embracing HTML5 and CSS3 standards. Software driven animations on a mobile device using javascript and jQuery are not the answer. They perform poorly on a mobile device with sluggish and choppy results. However, hardware accelerated animations using 2D and 3D transforms perform beautifully. Animate.css is a library of keyframe animations. I have written some add-ons to compliment the default CSS provided. I recommend using this library when it can add some subtle elegance to your product. Keep in mind their are some draw backs to using 2D and 3D transforms. Much of it is sparsely documented, but I would love to share what I have learned.</p>
+									<a href="http://daneden.me/animate/" target="_blank">Check it out  &rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+				</div><!-- end paper -->
+				
+				<div class="paper-banner animated fadeIn" id="contactbanner">
+					<div class="banner">
+						<div class="row-fluid">
+							<div class="span6">
+								<div class="contactmeicons">
+									<a href="/contact.html" id="cm-email" title="">Email Me</a>
+									<a href="/contact.html" id="cm-call" title="">Call Me</a>
+									<a href="/contact.html" id="cm-skype" title="">Skype Me</a>
+									<a href="/contact.html" id="cm-tweet" title="">Tweet</a>
+								</div>
+							</div>
+							<div class="span6">
+								<a class="" href="/contact.html" title="">Get in touch with me</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- end paper -->
+			</div><!-- /container -->
+				
+			<div class="push"></div>
+		</div> <!-- /wrapper -->
+			
+		<!-- Footer
+		================================================== -->
+		<footer>
+			<div class="container">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="social-btns animated fadeIn" id="social-buttons">
+							<div class="tweet">
+								<a href="https://twitter.com/joshuapekera" class="twitter-follow-button" data-show-count="false">Follow @joshuapekera</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+								<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1346227337.html#_=1346295463225&amp;count=horizontal&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fjoshuapekera.com%2F&amp;size=m&amp;text=Joshua%20Pekera%20%C2%BB%20Pages&amp;url=http%3A%2F%2Fjoshuapekera.com%2F&amp;via=joshuapekera" class="twitter-share-button twitter-count-horizontal" style="width: 107px; height: 20px; " title="Twitter Tweet Button" data-twttr-rendered="true"></iframe>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							</div>
+						</div>
+					<p class="copyright"><small>© 2012 Joshua Pekera</small></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div> <!-- /page -->	
+</div> <!--/ Viewport -->
+		
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/scripts-ck.js"></script>
+<!-- <script type="text/javascript" src="assets/js/lib/jquery-1.7.1.min.js"></script> -->
+<!-- <script type="text/javascript" src="assets/js/plugins.js"></script> -->
+<!-- <script type="text/javascript" src="assets/js/keyframe.js"></script> -->
+<!-- <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script> -->
+</body>
+</html>
