@@ -1,6 +1,3 @@
-@import "values.less"; // Modify this for custom colors, font-sizes, etc
-@import "mix.less"; // Modify this for custom colors, font-sizes, etc
-
 /* Page Structure */
 
 html {
@@ -16,23 +13,33 @@ body {
 	font-family:@sansFontFamily;
 	font-weight:400;
 	font-style: normal;
-	color:@white;
+	color:@primaryColor;
 	font-size:15px;
 	line-height:15px;
 	letter-spacing: normal;
-	background-color: @printerBlack;
+	background-color: @bodyBackground;
 }
+
+/*
+body::after {
+	background-image: url(@bg1x);
+	background-repeat: repeat;
+	height: 50px;
+	width: 50px;
+}
+*/
 
 #viewport {
 	height: 100%;
     min-height: 100%;
-    background-color: @printerBlack;
+    background-color: @bodyBackground;
 }
 
 #page {
 	height: 100%;
     min-height: 100%;
-    background-color: @printerBlack;
+    background-color: @bodyBackground;
+    //background: @bodyBackground url(@bg1x) repeat;
 }
 
 header {
@@ -40,10 +47,10 @@ header {
 	vertical-align: middle;
 	padding-right: 20px;
 	padding-left: 20px;
-	border-top: 1px solid @grayDark;
+	//border-top: 1px solid @grayDark;
 	margin: 0 auto;
 	z-index: inherit;
-	background-color: @printerBlack;
+	//background-color: @bodyBackground;
 }
 
 .wrapper {
@@ -51,13 +58,13 @@ header {
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -40px;
-	background-color: @printerBlack;
+	//background-color: @bodyBackground;
 }
 
 .push {
 	height: 40px;
 	clear: both;
-	background-color: @printerBlack;
+	//background-color: @bodyBackground;
 }
 
 footer {
@@ -65,9 +72,9 @@ footer {
 	display: block;
 	text-align: center;
 	font-size: @baseFontSize - 2;
-	color: @grayHighlight;
+	color: @grayLight;
 	height: 40px;
-	background-color: @printerBlack;
+	//background-color: @bodyBackground;
 }
 
 /* Fixed Footer Bottom */
@@ -79,12 +86,12 @@ a {
 	.transition(color .4s linear);
 }
 a:hover, a:focus {
-	color: @baldwinOrange;
+	color: @accentColor;
 	text-decoration: none;
 }
 
 /* Headers */
-h1, h2, h3 { color: @baldwinOrange;}
+h1, h2, h3 { color: @accentColor;}
 h1 strong {}
 h2 {}
 h3 {}
@@ -97,23 +104,39 @@ p {}
 /* Header */
 header .container {
 	padding-top: 20px;
-	text-align: center;
 	position: relative;
+	text-align: left;
 }
 
 header a.brand {
+	font-family: @spFontFamily;
+	position: relative;
+	display: inline-block;
+	font-size: @baseLineHeight + 2;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+	color: @navColor;
+	&:hover, &:focus {
+		color: darken(@navColor, 20%);
+	}
+}
+
+header a.brand:before {
+	content: "";
 	position: relative;
 	display: inline-block;
 	background-image: url("../img/logo.png");
 	background-repeat: no-repeat;
-	height: 57px;
-	width: 200px;
+	height: 50px;
+	width: 50px;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	.backface-visibility(hidden);
+	
 }
 
 header p {
-	color: @baldwinOrange;
+	color: @accentColor;
 	font-family: @spFontFamily;
 	font-size: @baseFontSize + 3px;
 	text-transform: uppercase;
@@ -131,32 +154,43 @@ header p {
 
 nav {
 	position: relative;
-	margin: 40px 0px 20px 0;
+	display: inline-block;
+	margin: 0px 0px 0px 0;
+	float: right;
+}
+
+nav ul {
+	list-style: none;
+	margin-top: 35px;
+	//float: left;
+}
+
+nav ul li {
+	display: inline-block;
 }
 
 nav a {
-	font-family:@spFontFamily;
-	margin: 0px 40px 0px 40px;
-	color: @white;
+	//font-family:@spFontFamily;
+	margin: 0px 20px 0px 20px;
+	color: @navColor;
 	font-size: @baseFontSize;
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
 	text-decoration: none;
-	text-shadow: none;
-	text-transform: uppercase;
+	text-shadow: 0 1px @white;
 	letter-spacing: .1em;
 }
 
 nav a:focus,
 nav a:hover {
-  color: @baldwinOrange;
+  color: darken(@navColor, 20%);
   text-decoration: none;
 }
 
 nav .active a,
 nav .active a:hover,
 nav .active a:focus {
-  color: @baldwinOrange;
+  color: @accentColor;
   text-decoration: none;
 }
 
@@ -247,7 +281,7 @@ body.menu-open #page {
 
 #page {
     position: relative;
-    background-color: @printerBlack;
+    background-color: @bodyBackground;
     z-index: 2;
     -webkit-transition: -webkit-transform 200ms ease-in;
     -moz-transition: -moz-transform 200ms ease-in;
@@ -496,21 +530,29 @@ img.so-skype {
 -------------------------------------------- */
 
 .hero-unit {
-	background: white;
+	padding:0 10px;
+	height:auto;
+	margin-bottom:0px;
+	margin-top:0;
 	text-align: center;
-	margin-top: 0px;
-	margin-bottom: 40px;
-	padding: 0px 0px 0px 0px;
-	position: relative;
-	text-align: center;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
+	line-height:15px;
+	background:@white;
+	background: @white url(@bg1x) repeat;
+	.border-radius(0px);
+	.border-top-left-radius(5px);
+	.border-top-right-radius(5px);
+	.box-shadow(0px 1px 2px 0px rgba(0,0,0,.2));
+}
+
+.hero-unit img {
+	max-width: 100%;
+	width: 615px;
+	height: auto;
 }
 
 section#content {
 	text-align: center;
-	color: @baldwinOrange;
+	color: @accentColor;
 	width: 100%;
 	position: relative;
 	padding-top: 10px;
@@ -533,7 +575,7 @@ section#content {
 	
 section#buckets {
 	text-align: left;
-	color: @baldwinOrange;
+	color: @accentColor;
 	width: 100%;
 	margin-top: 20px;
 	//padding-bottom: 20px;
@@ -551,13 +593,13 @@ section#resize-me p {
 
 section#pong {
 	text-align: left;
-	color: @baldwinOrange;
+	color: @accentColor;
 	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 	//padding-left: 20px;
-	background: @printerBackground;
+	background: @bodyBackground;
 }
 
 section#pong h3 {
@@ -582,14 +624,16 @@ section#pong a.btn{
 }
 
 a.bucket {
-	background-color: @printerBlacker;
+	background-color: @bucketColor;
 	padding: 20px 10px 10px 10px;
 	display: block;
 	position: relative;
+	//.border-radius(6px);
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	.transition(all .2s linear);
 	&:hover, &:focus, & active {
-		background-color: @printerBackground;
+		//background-color: lighten(@bucketColor, 10%);
+		background-color: #1b7ad6;
 	}
 }
 
@@ -600,11 +644,11 @@ a.bucket::after {
 	position: absolute;
 	top: 38%;
 	right: 15px;
-	color: @printerBlack;
+	color: @bucketColor;
 }
 
 a.bucket:hover::after {
-	color: @printerLighter;
+	color: @grayLighter;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -629,7 +673,7 @@ a.bucket:hover::after {
 
 #buckets p {
 	font-size: @baseFontSize + 2;
-	color: @baldwinOrange;
+	color: @accentColor;
 	padding-left: 10px;
 	font-weight: 400;
 }
@@ -835,7 +879,7 @@ ul.headshots li img {
 	&:hover,
 	&:focus,
 	&:active {
-		color: @baldwinOrange;
+		color: @accentColor;
 	}
 	
 }
@@ -953,7 +997,7 @@ ul.contact li span {
 }
 
 ul.contact li.emailme a span:hover {
-	color:@baldwinOrange;
+	color:@accentColor;
 	text-decoration:none
 }
 
@@ -1062,7 +1106,7 @@ a.cloud {
 	padding-top: 90px;
 	//-webkit-tap-highlight-color: rgba(247, 151, 55, .1);
 	&:hover, &:active, &:focus {
-		color:@baldwinOrange;
+		color:@accentColor;
 	}
 }
 

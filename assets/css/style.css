@@ -14,66 +14,6 @@
 /* Font-Face
 ================================================== */
 /* Hide text while web fonts are loading */
-/* Typekit delayed loading of Ansyc Fonts */
-.wf-loading h1,
-.wf-loading h2,
-.wf-loading h3,
-.wf-loading p,
-.wf-loading a {
-  visibility: hidden;
-}
-/* Font-Face */
-@font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  src: url(../fonts/proxima-nova/proximanova-regular-webfont.eot?1307578394);
-  src: url('../fonts/proxima-nova/proximanova-regular-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-regular-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-regular-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-regular-webfont.svg#webfont2rpW2ohz') format('svg');
-}
-@font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  src: url(../fonts/proxima-nova/proximanova-regitalic-webfont.eot?1307578394);
-  src: url('../fonts/proxima-nova/proximanova-regitalic-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-regitalic-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-regitalic-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-regitalic-webfont.svg#webfont2rpW2ohz') format('svg');
-}
-@font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  src: url(../fonts/proxima-nova/proximanova-light-webfont.eot?1307578394);
-  src: url('../fonts/proxima-nova/proximanova-light-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-light-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-light-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-light-webfont.svg#webfont2rpW2ohz') format('svg');
-}
-@font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  src: url(../fonts/proxima-nova/proximanova-semibold-webfont.eot?1307578394);
-  src: url('../fonts/proxima-nova/proximanova-semibold-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-semibold-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-semibold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-semibold-webfont.svg#webfont2rpW2ohz') format('svg');
-}
-@font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  font-style: italic;
-  src: url(../fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?1307578394);
-  src: url('../fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-semibolditalic-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-semibolditalic-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-semibolditalic-webfont.svg#webfont2rpW2ohz') format('svg');
-}
-@font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  src: url(../fonts/proxima-nova/proximanova-bold-webfont.eot?1307578394);
-  src: url('../fonts/proxima-nova/proximanova-bold-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-bold-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-bold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-bold-webfont.svg#webfont2rpW2ohz') format('svg');
-}
-@font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-style: italic;
-  src: url(../fonts/proxima-nova/proximanova-boldit-webfont.eot?1307578394);
-  src: url('../fonts/proxima-nova/proximanova-boldit-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-boldit-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-boldit-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-boldit-webfont.svg#webfont2rpW2ohz') format('svg');
-}
-@font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  src: url(../fonts/proxima-nova/proximanova-extrabold-webfont.eot?1307578394);
-  src: url('../fonts/proxima-nova/proximanova-extrabold-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-extrabold-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-extrabold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-extrabold-webfont.svg#webfont2rpW2ohz') format('svg');
-}
-/* Global Site Styles
-================================================== */
 .clearfix {
   *zoom: 1;
 }
@@ -109,6 +49,66 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* Typekit delayed loading of Ansyc Fonts */
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading p,
+.wf-loading a {
+  visibility: hidden;
+}
+/* Font-Face */
+@font-face {
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url(../fonts/proxima-nova/proximanova-regular-webfont.eot?1307578394);
+  src: url('../fonts/proxima-nova/proximanova-regular-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-regular-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-regular-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-regular-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  src: url(../fonts/proxima-nova/proximanova-regitalic-webfont.eot?1307578394);
+  src: url('../fonts/proxima-nova/proximanova-regitalic-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-regitalic-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-regitalic-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-regitalic-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  src: url(../fonts/proxima-nova/proximanova-light-webfont.eot?1307578394);
+  src: url('../fonts/proxima-nova/proximanova-light-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-light-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-light-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-light-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  src: url(../fonts/proxima-nova/proximanova-semibold-webfont.eot?1307578394);
+  src: url('../fonts/proxima-nova/proximanova-semibold-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-semibold-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-semibold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-semibold-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  src: url(../fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?1307578394);
+  src: url('../fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-semibolditalic-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-semibolditalic-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-semibolditalic-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  src: url(../fonts/proxima-nova/proximanova-bold-webfont.eot?1307578394);
+  src: url('../fonts/proxima-nova/proximanova-bold-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-bold-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-bold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-bold-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  src: url(../fonts/proxima-nova/proximanova-boldit-webfont.eot?1307578394);
+  src: url('../fonts/proxima-nova/proximanova-boldit-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-boldit-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-boldit-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-boldit-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+@font-face {
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  src: url(../fonts/proxima-nova/proximanova-extrabold-webfont.eot?1307578394);
+  src: url('../fonts/proxima-nova/proximanova-extrabold-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-extrabold-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-extrabold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-extrabold-webfont.svg#webfont2rpW2ohz') format('svg');
+}
+/* Global Site Styles
+================================================== */
 /* Page Structure */
 html {
   height: 100%;
@@ -119,55 +119,58 @@ html {
 }
 body {
   height: 100%;
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #ffffff;
+  color: #4a4f55;
   font-size: 15px;
   line-height: 15px;
   letter-spacing: normal;
-  background-color: #2b2b2b;
+  background-color: #ffffff;
 }
+/*
+body::after {
+	background-image: url(@bg1x);
+	background-repeat: repeat;
+	height: 50px;
+	width: 50px;
+}
+*/
 #viewport {
   height: 100%;
   min-height: 100%;
-  background-color: #2b2b2b;
+  background-color: #ffffff;
 }
 #page {
   height: 100%;
   min-height: 100%;
-  background-color: #2b2b2b;
+  background-color: #ffffff;
 }
 header {
   min-height: 100px;
   vertical-align: middle;
   padding-right: 20px;
   padding-left: 20px;
-  border-top: 1px solid #333333;
   margin: 0 auto;
   z-index: inherit;
-  background-color: #2b2b2b;
 }
 .wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -40px;
-  background-color: #2b2b2b;
 }
 .push {
   height: 40px;
   clear: both;
-  background-color: #2b2b2b;
 }
 footer {
   width: 100%;
   display: block;
   text-align: center;
   font-size: 13px;
-  color: #474747;
+  color: #999999;
   height: 40px;
-  background-color: #2b2b2b;
 }
 /* Fixed Footer Bottom */
 /* Links */
@@ -181,30 +184,45 @@ a {
 }
 a:hover,
 a:focus {
-  color: #f79737;
+  color: #1b7ad6;
   text-decoration: none;
 }
 /* Headers */
 h1,
 h2,
 h3 {
-  color: #f79737;
+  color: #1b7ad6;
 }
 /* Header and Global Nav
 ================================================== */
 /* Header */
 header .container {
   padding-top: 20px;
-  text-align: center;
   position: relative;
+  text-align: left;
 }
 header a.brand {
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  color: #c7cbcc;
+}
+header a.brand:hover,
+header a.brand:focus {
+  color: #92999b;
+}
+header a.brand:before {
+  content: "";
   position: relative;
   display: inline-block;
   background-image: url("../img/logo.png");
   background-repeat: no-repeat;
-  height: 57px;
-  width: 200px;
+  height: 50px;
+  width: 50px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -212,7 +230,7 @@ header a.brand {
   backface-visibility: hidden;
 }
 header p {
-  color: #f79737;
+  color: #1b7ad6;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
@@ -226,29 +244,36 @@ header p {
 /* Global Nav */
 nav {
   position: relative;
-  margin: 40px 0px 20px 0;
+  display: inline-block;
+  margin: 0px 0px 0px 0;
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin-top: 35px;
+}
+nav ul li {
+  display: inline-block;
 }
 nav a {
-  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0px 40px 0px 40px;
-  color: #ffffff;
+  margin: 0px 20px 0px 20px;
+  color: #c7cbcc;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   text-decoration: none;
-  text-shadow: none;
-  text-transform: uppercase;
+  text-shadow: 0 1px #ffffff;
   letter-spacing: .1em;
 }
 nav a:focus,
 nav a:hover {
-  color: #f79737;
+  color: #92999b;
   text-decoration: none;
 }
 nav .active a,
 nav .active a:hover,
 nav .active a:focus {
-  color: #f79737;
+  color: #1b7ad6;
   text-decoration: none;
 }
 /* Global Crumb */
@@ -325,7 +350,7 @@ body.menu-open #page {
 }
 #page {
   position: relative;
-  background-color: #2b2b2b;
+  background-color: #ffffff;
   z-index: 2;
   -webkit-transition: -webkit-transform 200ms ease-in;
   -moz-transition: -moz-transform 200ms ease-in;
@@ -591,19 +616,35 @@ img.so-skype {
 /* Home Page
 -------------------------------------------- */
 .hero-unit {
-  background: white;
-  margin-top: 0px;
-  margin-bottom: 40px;
-  padding: 0px 0px 0px 0px;
-  position: relative;
+  padding: 0 10px;
+  height: auto;
+  margin-bottom: 0px;
+  margin-top: 0;
   text-align: center;
+  line-height: 15px;
+  background: #ffffff;
+  background: #ffffff url("../img/bg-noise@1x.png") repeat;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.hero-unit img {
+  max-width: 100%;
+  width: 615px;
+  height: auto;
 }
 section#content {
   text-align: center;
-  color: #f79737;
+  color: #1b7ad6;
   width: 100%;
   position: relative;
   padding-top: 10px;
@@ -627,7 +668,7 @@ section#content {
 }
 section#buckets {
   text-align: left;
-  color: #f79737;
+  color: #1b7ad6;
   width: 100%;
   margin-top: 20px;
 }
@@ -635,18 +676,18 @@ section#resize-me p {
   text-align: center;
   font-family: "lint-mccree", 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #171717;
+  color: #373a40;
   margin-bottom: 40px;
   margin-top: 40px;
 }
 section#pong {
   text-align: left;
-  color: #f79737;
+  color: #1b7ad6;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  background: #212121;
+  background: #ffffff;
 }
 section#pong h3 {
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -664,7 +705,7 @@ section#pong a.btn {
   margin-top: 60px;
 }
 a.bucket {
-  background-color: #252525;
+  background-color: #ffffff;
   padding: 20px 10px 10px 10px;
   display: block;
   position: relative;
@@ -677,7 +718,7 @@ a.bucket {
 a.bucket:hover,
 a.bucket:focus,
 a.bucket active {
-  background-color: #212121;
+  background-color: #1b7ad6;
 }
 a.bucket::after {
   content: "\203A";
@@ -686,10 +727,10 @@ a.bucket::after {
   position: absolute;
   top: 38%;
   right: 15px;
-  color: #2b2b2b;
+  color: #ffffff;
 }
 a.bucket:hover::after {
-  color: #313131;
+  color: #eeeeee;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 #buckets h3 {
@@ -709,7 +750,7 @@ a.bucket:hover::after {
 }
 #buckets p {
   font-size: 17px;
-  color: #f79737;
+  color: #1b7ad6;
   padding-left: 10px;
   font-weight: 400;
 }
@@ -791,7 +832,7 @@ ul.headshots li img {
   text-align: justify;
 }
 .paper-content hgroup h3 {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
@@ -850,7 +891,7 @@ ul.headshots li img {
 }
 /* Banner Layout */
 .paper-banner {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -869,7 +910,7 @@ ul.headshots li img {
 }
 .paper-banner h3 {
   color: #ffffff;
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -904,7 +945,7 @@ ul.headshots li img {
 .paper-banner a:hover,
 .paper-banner a:focus,
 .paper-banner a:active {
-  color: #f79737;
+  color: #1b7ad6;
 }
 .canvas,
 .canvas-banner {
@@ -1003,7 +1044,7 @@ li.callme i {
   backface-visibility: hidden;
 }
 ul.contact li span {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #999999;
@@ -1018,7 +1059,7 @@ ul.contact li span {
   transition: color 0.4s linear;
 }
 ul.contact li.emailme a span:hover {
-  color: #f79737;
+  color: #1b7ad6;
   text-decoration: none;
 }
 /* Resume Banner */
@@ -1110,7 +1151,7 @@ a.cloud {
 a.cloud:hover,
 a.cloud:active,
 a.cloud:focus {
-  color: #f79737;
+  color: #1b7ad6;
 }
 section#references {
   margin-bottom: 60px;
@@ -1118,7 +1159,7 @@ section#references {
 /* Portfolio Page
 -------------------------------------------- */
 .folio-banner {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
@@ -1198,7 +1239,7 @@ a.summary {
 }
 /* Contact Me Banner */
 p.contactlead {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
@@ -1431,7 +1472,7 @@ p.contactlead {
     margin-top: 10px;
   }
   .paper-content hgroup h3 {
-    font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 300;
     line-height: 25px;
@@ -1442,7 +1483,7 @@ p.contactlead {
     backface-visibility: hidden;
   }
   .paper-content hgroup h4 {
-    font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -1452,7 +1493,7 @@ p.contactlead {
     float: left;
   }
   .paper-content hgroup h5 {
-    font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
@@ -1462,7 +1503,7 @@ p.contactlead {
     float: left;
   }
   h4.position {
-    font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -1649,7 +1690,7 @@ p.contactlead {
   ------------------------------------ */
   /* Contact Me Banner Fixes */
   p.contactlead {
-    font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -1919,6 +1960,10 @@ p.contactlead {
 ------------------------------------------------------------------ */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
+  #page {
+    background: #ffffff url("../img/bg-noise@2x.png") repeat;
+    background-size: 50px 50px;
+  }
   header a.brand {
     background-image: url("../img/logo@2x.png");
     background-size: 200px 57px;

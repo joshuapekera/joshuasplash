@@ -10,17 +10,13 @@
 // Grays
 // -------------------------
 @black:                 #000;
-@slate:					#171717;
-@slateLight:			#303030;
 @grayDarker:            #222;
 @grayDark:              #333;
 @gray:                  #555;
 @grayer:             	#888;
 @grayLight:             #999;
 @grayLighter:           #eee;
-@grayHighlight:			#474747;
-@graySmoke:           	#f5f5f5;
-@grayFlat:				#edeae8;
+@grayCool:				#c7cbcc;
 @white:                 #fff;
 
 
@@ -35,16 +31,6 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
-
-// Theme colors
-// -------------------------
-@baldwinOrange:			#f79737;
-@printerBlack:			#2b2b2b;
-@darkPrinter:			#1a1a1a;
-@printerLighter:		#313131;
-@printerBlacker:		#252525;
-@printerBackground:		#212121;
-
 // Slideout Menu colors
 // -------------------------
 @shadeBorder:				#141414;
@@ -56,8 +42,26 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @printerBlack;
+@bodyBackground:        @white;
 @textColor:             @grayDark;
+@navColor:				@grayCool;
+
+// Theme colors
+// -------------------------
+@primaryColor:			#4a4f55;
+@accentColor:			#1b7ad6;
+@offWhite:				#f5f5f5;
+@bucketColor:			@bodyBackground;
+@printerBlack:			#2b2b2b;
+@darkPrinter:			#1a1a1a;
+@printerLighter:		#313131;
+@printerBlacker:		#252525;
+@printerBackground:		#212121;
+@slate:					#373a40;
+@slateLight:			#303030;
+@grayHighlight:			#474747;
+@graySmoke:           	#f5f5f5;
+@grayFlat:				#edeae8;
 
 
 // Links
@@ -68,7 +72,7 @@
 
 // Typography
 // -------------------------
-@sansFontFamily:        'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+@sansFontFamily:        'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 @spFontFamily:			"brandon-grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -169,8 +173,8 @@
 
 // Image Asset path
 // -------------------------
-@bg1x:			"../img/paper.jpg";
-@bg2x:			"../img/bg@2x.jpg";
+@bg1x:			"../img/bg-noise@1x.png";
+@bg2x:			"../img/bg-noise@2x.png";
 
 // Input placeholder text color
 // -------------------------
@@ -205,7 +209,7 @@
 
 @navbarText:                      @grayLight;
 @navbarLinkColor:                 @white;
-@navbarLinkColorHover:            @baldwinOrange;
+@navbarLinkColorHover:            @primaryColor;
 @navbarLinkColorActive:           @gray;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);

@@ -50,7 +50,7 @@
 }
 /* Page Structure */
 body {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
@@ -146,7 +146,7 @@ h3 {
   float: left;
 }
 .navbar .nav > li > a {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   float: none;
   padding: 10px 15px 10px;
   color: #9fa2a3;
@@ -717,7 +717,7 @@ a.btn-cta {
     margin-top: 10px;
   }
   .paper-content hgroup h3 {
-    font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 300;
     line-height: 25px;
@@ -728,7 +728,7 @@ a.btn-cta {
     backface-visibility: hidden;
   }
   .paper-content hgroup h4 {
-    font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -738,7 +738,7 @@ a.btn-cta {
     float: left;
   }
   .paper-content hgroup h5 {
-    font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
@@ -748,7 +748,7 @@ a.btn-cta {
     float: left;
   }
   h4.position {
-    font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -935,7 +935,7 @@ a.btn-cta {
   ------------------------------------ */
   /* Contact Me Banner Fixes */
   p.contactlead {
-    font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -1205,6 +1205,10 @@ a.btn-cta {
 ------------------------------------------------------------------ */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
+  #page {
+    background: #ffffff url("../img/bg-noise@2x.png") repeat;
+    background-size: 50px 50px;
+  }
   header a.brand {
     background-image: url("../img/logo@2x.png");
     background-size: 200px 57px;
@@ -1298,6 +1302,41 @@ a.btn-cta {
 /* Font-Face
 ================================================== */
 /* Hide text while web fonts are loading */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/*
+// CSS Webkit Image-Set for retina image replacement
+// ---------------------------------------------------------
+.image-set (@imageSource, @imageSource1x, @imageSource2x){
+	background-image: url(@{imageSource}); 
+	background-image: -webkit-image-set( url(@{imageSource}) ~ "1x", url(@{imageSource2x}) ~ "2x");
+}
+*/
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /* Typekit delayed loading of Ansyc Fonts */
 .wf-loading h1,
 .wf-loading h2,
@@ -1308,50 +1347,50 @@ a.btn-cta {
 }
 /* Font-Face */
 @font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   src: url(../fonts/proxima-nova/proximanova-regular-webfont.eot?1307578394);
   src: url('../fonts/proxima-nova/proximanova-regular-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-regular-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-regular-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-regular-webfont.svg#webfont2rpW2ohz') format('svg');
 }
 @font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   src: url(../fonts/proxima-nova/proximanova-regitalic-webfont.eot?1307578394);
   src: url('../fonts/proxima-nova/proximanova-regitalic-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-regitalic-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-regitalic-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-regitalic-webfont.svg#webfont2rpW2ohz') format('svg');
 }
 @font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   src: url(../fonts/proxima-nova/proximanova-light-webfont.eot?1307578394);
   src: url('../fonts/proxima-nova/proximanova-light-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-light-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-light-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-light-webfont.svg#webfont2rpW2ohz') format('svg');
 }
 @font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   src: url(../fonts/proxima-nova/proximanova-semibold-webfont.eot?1307578394);
   src: url('../fonts/proxima-nova/proximanova-semibold-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-semibold-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-semibold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-semibold-webfont.svg#webfont2rpW2ohz') format('svg');
 }
 @font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-style: italic;
   src: url(../fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?1307578394);
   src: url('../fonts/proxima-nova/proximanova-semibolditalic-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-semibolditalic-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-semibolditalic-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-semibolditalic-webfont.svg#webfont2rpW2ohz') format('svg');
 }
 @font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   src: url(../fonts/proxima-nova/proximanova-bold-webfont.eot?1307578394);
   src: url('../fonts/proxima-nova/proximanova-bold-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-bold-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-bold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-bold-webfont.svg#webfont2rpW2ohz') format('svg');
 }
 @font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: italic;
   src: url(../fonts/proxima-nova/proximanova-boldit-webfont.eot?1307578394);
   src: url('../fonts/proxima-nova/proximanova-boldit-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-boldit-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-boldit-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-boldit-webfont.svg#webfont2rpW2ohz') format('svg');
 }
 @font-face {
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   src: url(../fonts/proxima-nova/proximanova-extrabold-webfont.eot?1307578394);
   src: url('../fonts/proxima-nova/proximanova-extrabold-webfont.eot?iefix') format('eot'), url(../fonts/proxima-nova/proximanova-extrabold-webfont.woff?1307578394) format('woff'), url(../fonts/proxima-nova/proximanova-extrabold-webfont.ttf?1307578394) format('truetype'), url('../fonts/proxima-nova/proximanova-extrabold-webfont.svg#webfont2rpW2ohz') format('svg');

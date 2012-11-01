@@ -151,11 +151,11 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: 'Proxima', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #333333;
-  background-color: #2b2b2b;
+  background-color: #ffffff;
 }
 a {
   color: #f79737;
