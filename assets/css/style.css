@@ -145,6 +145,7 @@ body::after {
   height: 100%;
   min-height: 100%;
   background-color: #ffffff;
+  background: url("../img/bg-texture@1x.jpg") repeat;
 }
 header {
   min-height: 100px;
@@ -153,6 +154,7 @@ header {
   padding-left: 20px;
   margin: 0 auto;
   z-index: inherit;
+  background: url("../img/bg-texture@1x.jpg") repeat;
 }
 .wrapper {
   min-height: 100%;
@@ -209,11 +211,13 @@ header a.brand {
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
-  color: #c7cbcc;
+  color: #000000;
+  text-shadow: 0 1px #333333;
 }
 header a.brand:hover,
 header a.brand:focus {
-  color: #92999b;
+  color: #ffffff;
+  text-shadow: 0 1px transparent;
 }
 header a.brand:before {
   content: "";
@@ -257,17 +261,18 @@ nav ul li {
 }
 nav a {
   margin: 0px 20px 0px 20px;
-  color: #c7cbcc;
+  color: #000000;
   font-size: 15px;
   font-weight: 600;
   font-style: normal;
   text-decoration: none;
-  text-shadow: 0 1px #ffffff;
+  text-shadow: 0 1px #333333;
   letter-spacing: .1em;
 }
 nav a:focus,
 nav a:hover {
-  color: #92999b;
+  color: #ffffff;
+  text-shadow: 0 1px transparent;
   text-decoration: none;
 }
 nav .active a,
@@ -622,17 +627,10 @@ img.so-skype {
   margin-top: 0;
   text-align: center;
   line-height: 15px;
-  background: #ffffff;
-  background: #ffffff url("../img/bg-noise@1x.png") repeat;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  -webkit-border-top-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  border-top-right-radius: 5px;
+  background: e5e5e5 url("../img/bg-noise@1x.png") repeat;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
@@ -705,7 +703,6 @@ section#pong a.btn {
   margin-top: 60px;
 }
 a.bucket {
-  background-color: #ffffff;
   padding: 20px 10px 10px 10px;
   display: block;
   position: relative;
@@ -1960,9 +1957,10 @@ p.contactlead {
 ------------------------------------------------------------------ */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
-  #page {
-    background: #ffffff url("../img/bg-noise@2x.png") repeat;
-    background-size: 50px 50px;
+  #page,
+  header {
+    background: #ffffff url("../img/bg-texture@1x.jpg") repeat;
+    background-size: 256px 256px;
   }
   header a.brand {
     background-image: url("../img/logo@2x.png");

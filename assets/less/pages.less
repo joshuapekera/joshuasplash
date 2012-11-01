@@ -39,7 +39,7 @@ body::after {
 	height: 100%;
     min-height: 100%;
     background-color: @bodyBackground;
-    //background: @bodyBackground url(@bg1x) repeat;
+    background: url(@bgCanvas1x) repeat;
 }
 
 header {
@@ -50,7 +50,7 @@ header {
 	//border-top: 1px solid @grayDark;
 	margin: 0 auto;
 	z-index: inherit;
-	//background-color: @bodyBackground;
+	background: url(@bgCanvas1x) repeat;
 }
 
 .wrapper {
@@ -116,9 +116,11 @@ header a.brand {
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: left;
-	color: @navColor;
+	color: @navbarBrandColor;
+	text-shadow: 0 1px @grayDark;
 	&:hover, &:focus {
-		color: darken(@navColor, 20%);
+		color: @white;
+		text-shadow: 0 1px transparent;
 	}
 }
 
@@ -172,18 +174,19 @@ nav ul li {
 nav a {
 	//font-family:@spFontFamily;
 	margin: 0px 20px 0px 20px;
-	color: @navColor;
+	color: @navbarLinkColor;
 	font-size: @baseFontSize;
 	font-weight: 600;
 	font-style: normal;
 	text-decoration: none;
-	text-shadow: 0 1px @white;
+	text-shadow: 0 1px @grayDark;
 	letter-spacing: .1em;
 }
 
 nav a:focus,
 nav a:hover {
-  color: darken(@navColor, 20%);
+  color: @white;
+  text-shadow: 0 1px transparent;
   text-decoration: none;
 }
 
@@ -536,11 +539,10 @@ img.so-skype {
 	margin-top:0;
 	text-align: center;
 	line-height:15px;
-	background:@white;
-	background: @white url(@bg1x) repeat;
-	.border-radius(0px);
-	.border-top-left-radius(5px);
-	.border-top-right-radius(5px);
+	//border: 4px solid @black;
+	//background:@white;
+	background: @grayCooler url(@bg1x) repeat;
+	.border-radius(5px);
 	.box-shadow(0px 1px 2px 0px rgba(0,0,0,.2));
 }
 
@@ -624,7 +626,7 @@ section#pong a.btn{
 }
 
 a.bucket {
-	background-color: @bucketColor;
+	//background-color: @bucketColor;
 	padding: 20px 10px 10px 10px;
 	display: block;
 	position: relative;

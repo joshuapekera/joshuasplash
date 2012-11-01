@@ -1205,9 +1205,10 @@ a.btn-cta {
 ------------------------------------------------------------------ */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
-  #page {
-    background: #ffffff url("../img/bg-noise@2x.png") repeat;
-    background-size: 50px 50px;
+  #page,
+  header {
+    background: #ffffff url("../img/bg-texture@1x.jpg") repeat;
+    background-size: 256px 256px;
   }
   header a.brand {
     background-image: url("../img/logo@2x.png");
