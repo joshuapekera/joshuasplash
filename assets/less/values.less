@@ -17,7 +17,7 @@
 @grayLight:             #999;
 @grayLighter:           #eee;
 @grayCool:				#c7cbcc;
-@grayCooler:			e5e5e5;
+@grayCooler:			#e5e5e5;
 @white:                 #fff;
 
 
@@ -52,6 +52,7 @@
 @primaryColor:			#4a4f55;
 @accentColor:			#1b7ad6;
 @offWhite:				#f5f5f5;
+@dirtyWhite:			#9a9795;
 @bucketColor:			@bodyBackground;
 @printerBlack:			#2b2b2b;
 @darkPrinter:			#1a1a1a;
@@ -178,6 +179,8 @@
 @bg2x:			"../img/bg-noise@2x.png";
 @bgCanvas1x:	"../img/bg-texture@1x.jpg";
 @bgCanvas2x:	"../img/bg-texture@2x.jpg";
+@bgWood1x:	"../img/bg-wood@1x.jpg";
+@bgWood2x:	"../img/bg-texture@2x.jpg";
 
 // Input placeholder text color
 // -------------------------
@@ -211,13 +214,14 @@
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      @grayLight;
-@navbarLinkColor:                 @black;
-@navbarLinkColorHover:            @primaryColor;
-@navbarLinkColorActive:           @gray;
+@navbarLinkColor:                 @dirtyWhite;
+@navbarLinkColorHover:            @accentColor;
+@navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
 
 @navbarBrandColor:                @navbarLinkColor;
+@navbarBrandColorHover:           darken(@navbarLinkColor, 15%);
 
 // Inverted navbar
 @navbarInverseBackground:                #111111;
