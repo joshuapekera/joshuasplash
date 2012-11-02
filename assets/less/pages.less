@@ -112,6 +112,7 @@ header a.brand {
 	font-family: @spFontFamily;
 	position: relative;
 	display: inline-block;
+	margin-top: 20px;
 	font-size: @baseLineHeight + 2;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -124,6 +125,7 @@ header a.brand {
 	}
 }
 
+/*
 header a.brand:before {
 	content: "";
 	position: relative;
@@ -136,6 +138,7 @@ header a.brand:before {
 	.backface-visibility(hidden);
 	
 }
+*/
 
 header p {
 	color: @accentColor;
@@ -163,7 +166,7 @@ nav {
 
 nav ul {
 	list-style: none;
-	margin-top: 35px;
+	margin-top: 20px;
 	//float: left;
 }
 
@@ -299,7 +302,7 @@ a.plus {
 	background-repeat: no-repeat;
 	height: 22px;
 	width: 22px;
-	top: 15px;
+	top: 10px;
 	right: 5px;
 	padding: 5px;
 	background-position: center;
@@ -551,6 +554,30 @@ img.so-skype {
 	width: 615px;
 	height: auto;
 	.backface-visibility(hidden);
+}
+
+#content .greeting {
+	text-align: left;
+	margin-top: 25%;
+	display: block;
+	//position: absolute;
+	//top: 100px;
+	//right: 20px;
+}
+
+#content .greeting h2 {
+	text-align: left;
+	font-size: @baseFontSize + 21;
+	line-height: @baseLineHeight + 20;
+	text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+}
+
+#content .greeting p {
+	text-align: left;
+	font-size: @baseFontSize + 3;
+	line-height: @baseLineHeight + 2;
+	text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+	color: @white;
 }
 
 section#content::before {

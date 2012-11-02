@@ -1937,11 +1937,17 @@ a.backtotop:hover {
   section#letterhead {
     margin: 0 0px 0 0px;
   }
+  header {
+    min-height: 50px;
+  }
   header,
   footer,
   #page {
     margin: 0px -10px 0px -10px;
     padding: 0px 10px 0px 10px;
+  }
+  header a.brand {
+    margin-top: 0px;
   }
   .btn-block-fluid {
     width: 100%;
@@ -2189,7 +2195,6 @@ a.backtotop:hover {
     padding-right: 10px;
   }
   a.bucket {
-    background-color: #252525;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
