@@ -602,9 +602,11 @@ img.so-skype {
 	position: relative;
 }
 
+/*
 section#intro {
 	.box-shadow(inset 0px 1px 4px 0px rgba(0,0,0,.2));
 }
+*/
 
 section#intro .greeting {
 	text-align: center;
@@ -657,23 +659,14 @@ section#content {
 	.backface-visibility(hidden);
 }
 
-	#content h2 {
-		font-family: "brandon-grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
-		color: white;
-		font-weight: 700;
-		font-size: 20px;
-		font-style: normal;
-		text-shadow: 0px 1px 0px #97764f;
-		text-transform: uppercase;
-	}
-	
-section#buckets {
-	text-align: left;
-	color: @accentColor;
-	width: 100%;
-	margin-top: 20px;
-	//padding-bottom: 20px;
-	//background: @printerBlack;
+#content h2 {
+	font-family: "brandon-grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: white;
+	font-weight: 700;
+	font-size: 20px;
+	font-style: normal;
+	text-shadow: 0px 1px 0px #97764f;
+	text-transform: uppercase;
 }
 
 section#resize-me p {
@@ -689,7 +682,7 @@ section#pong {
 	text-align: left;
 	color: @accentColor;
 	width: 100%;
-	padding-top: 20px;
+	padding-top: 60px;
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 	//padding-left: 20px;
@@ -699,103 +692,70 @@ section#pong {
 section#pong h3 {
 	//font-family: @titleFontFamily;
 	font-family: @spFontFamily;
-	font-size: @baseFontSize + 3;
+	font-size: @baseFontSize + 9;
 	text-transform: uppercase;
-	font-weight: 400;
-	color: @white;
+	font-weight: 500;
+	color: @grayDark;
 	//padding-left: 20px;
 }
 
 section#pong p {
-	color: @white;
+	color: @primaryColor;
 	font-size: @baseFontSize + 1;
 	line-height: @baseLineHeight + 2;
 	//padding-left: 20px;
 }
 
 section#pong a.btn{
-	margin-top: 60px;
+	margin-top: 5px;
 }
 
-a.bucket {
-	//background-color: @bucketColor;
-	padding: 20px 10px 10px 10px;
-	display: block;
-	position: relative;
-	//.border-radius(6px);
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	.transition(all .2s linear);
-	&:hover, &:focus, & active {
-		//background-color: lighten(@bucketColor, 10%);
-		background-color: #1b7ad6;
-	}
+section#buckets {
+	text-align: center;
+	color: @accentColor;
+	width: 100%;
+	padding-top: 30px;
 }
 
-a.bucket::after {
-	content: "\203A";
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	font-size: @baseFontSize + 30;
-	position: absolute;
-	top: 38%;
-	right: 15px;
-	color: @bucketColor;
+section#buckets img.thumbnail {
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	text-align: center;
+	padding: 0;
+	display: inline-block;
 }
-
-a.bucket:hover::after {
-	color: @grayLighter;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
 
 #buckets h3 {
-	//font-family: @titleFontFamily;
-	//font-size: @baseFontSize;
 	font-family: @spFontFamily;
-	font-size: @baseFontSize + 3;
+	font-size: @baseFontSize + 9;
 	text-transform: uppercase;
 	line-height: @baseLineHeight;
-	text-indent: 10px;
-	font-weight: 400;
-	color: @white;
-	padding: 10px 0px 30px 10px;
+	font-weight: 500;
+	color: @grayDark;
+	padding: 0px 0px 10px 0px;
 	margin: 0;
-	text-align: left;
-	text-indent: 60px;
 	display: inline-block;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+#buckets h3 + p {
+	font-family: @spFontFamily;
+	font-size: @baseFontSize + 3;
+	color: @grayLight;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
 #buckets p {
-	font-size: @baseFontSize + 2;
-	color: @accentColor;
-	padding-left: 10px;
+	font-size: @baseFontSize + 3;
+	color: @primaryColor;
+	padding: 0 20px;
 	font-weight: 400;
 }
 
-#buckets h3::before {
-	background-image: url("../img/bucket-icons@1x.png");
-	background-repeat: no-repeat;
-	height: 50px;
-	width: 50px;
-	content: "";
-	line-height: @baseLineHeight;
-	top: 18px;
-	position: absolute;
-	display: block;
-	float: left;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-#buckets h3#bucket-coverletter::before {
-	background-position: 0px 0px;
-}
-
-#buckets h3#bucket-resume::before {
-	background-position: -50px 0px;
-}
-
-#buckets h3#bucket-portfolio::before {
-	background-position: -100px 0px;
+#buckets a{
+	margin-top: 10px;
 }
 	
 #contact-me {

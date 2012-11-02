@@ -670,11 +670,11 @@ img.so-skype {
   margin-bottom: 20px;
   position: relative;
 }
+/*
 section#intro {
-  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+	.box-shadow(inset 0px 1px 4px 0px rgba(0,0,0,.2));
 }
+*/
 section#intro .greeting {
   text-align: center;
 }
@@ -735,12 +735,6 @@ section#content {
   text-shadow: 0px 1px 0px #97764f;
   text-transform: uppercase;
 }
-section#buckets {
-  text-align: left;
-  color: #1b7ad6;
-  width: 100%;
-  margin-top: 20px;
-}
 section#resize-me p {
   text-align: center;
   font-family: "lint-mccree", 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -753,96 +747,67 @@ section#pong {
   text-align: left;
   color: #1b7ad6;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 60px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   background: #ffffff;
 }
 section#pong h3 {
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   text-transform: uppercase;
-  font-weight: 400;
-  color: #ffffff;
+  font-weight: 500;
+  color: #333333;
 }
 section#pong p {
-  color: #ffffff;
+  color: #4a4f55;
   font-size: 16px;
   line-height: 22px;
 }
 section#pong a.btn {
-  margin-top: 60px;
+  margin-top: 5px;
 }
-a.bucket {
-  padding: 20px 10px 10px 10px;
-  display: block;
-  position: relative;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+section#buckets {
+  text-align: center;
+  color: #1b7ad6;
+  width: 100%;
+  padding-top: 30px;
 }
-a.bucket:hover,
-a.bucket:focus,
-a.bucket active {
-  background-color: #1b7ad6;
-}
-a.bucket::after {
-  content: "\203A";
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-size: 45px;
-  position: absolute;
-  top: 38%;
-  right: 15px;
-  color: #ffffff;
-}
-a.bucket:hover::after {
-  color: #eeeeee;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+section#buckets img.thumbnail {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  padding: 0;
+  display: inline-block;
 }
 #buckets h3 {
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   text-transform: uppercase;
   line-height: 20px;
-  text-indent: 10px;
-  font-weight: 400;
-  color: #ffffff;
-  padding: 10px 0px 30px 10px;
+  font-weight: 500;
+  color: #333333;
+  padding: 0px 0px 10px 0px;
   margin: 0;
-  text-align: left;
-  text-indent: 60px;
   display: inline-block;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+#buckets h3 + p {
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #999999;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
 #buckets p {
-  font-size: 17px;
-  color: #1b7ad6;
-  padding-left: 10px;
+  font-size: 18px;
+  color: #4a4f55;
+  padding: 0 20px;
   font-weight: 400;
 }
-#buckets h3::before {
-  background-image: url("../img/bucket-icons@1x.png");
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 50px;
-  content: "";
-  line-height: 20px;
-  top: 18px;
-  position: absolute;
-  display: block;
-  float: left;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-#buckets h3#bucket-coverletter::before {
-  background-position: 0px 0px;
-}
-#buckets h3#bucket-resume::before {
-  background-position: -50px 0px;
-}
-#buckets h3#bucket-portfolio::before {
-  background-position: -100px 0px;
+#buckets a {
+  margin-top: 10px;
 }
 #contact-me {
   background-color: white;
@@ -1680,28 +1645,15 @@ p.contactlead {
     backface-visibility: hidden;
   }
   section#buckets {
-    text-align: left;
     margin-bottom: 0px;
+    padding-top: 0px;
   }
   section#buckets ul.thumbnails li:last-child {
     margin-bottom: 0;
   }
-  /*
   section#pong {
-  	display: none;
-  }
-  */
-  section#pong h3 {
-    font-size: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
     text-align: center;
-  }
-  section#pong p {
-    font-size: 15px;
-    line-height: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 0px;
   }
   a.bucket {
     -webkit-transition: all 0.2s linear;
