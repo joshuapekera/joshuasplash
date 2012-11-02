@@ -1966,11 +1966,6 @@ p.contactlead {
 ------------------------------------------------------------------ */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
-  #page,
-  header {
-    background: #ffffff url("../img/bg-texture@1x.jpg") repeat;
-    background-size: 256px 256px;
-  }
   header a.brand {
     background-image: url("../img/logo@2x.png");
     background-size: 200px 57px;
@@ -1980,6 +1975,10 @@ p.contactlead {
     background-size: 22px 22px;
     height: 22px;
     width: 22px;
+  }
+  section#content::before {
+    background: #ffffff url("../img/bg-wood@2x.jpg") repeat-x;
+    background-size: 512px 512px;
   }
   .paper-banner h3::before {
     background: url("../img/icons@2x.png") no-repeat;

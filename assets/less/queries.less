@@ -680,11 +680,6 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 
-#page, header {
-    background: @bodyBackground url(@bgCanvas1x) repeat;
-    background-size: 256px 256px;
-}
-
 header a.brand {
 	background-image: url("../img/logo@2x.png");
 	background-size: 200px 57px;
@@ -695,6 +690,11 @@ a.plus {
 	background-size: 22px 22px;
 	height: 22px;
 	width: 22px;
+}
+
+section#content::before {
+	background: @white url(@bgWood2x) repeat-x;
+	background-size: 512px 512px;
 }
 
 .paper-banner h3::before {
