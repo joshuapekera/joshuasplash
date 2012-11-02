@@ -833,6 +833,11 @@ a.btn-cta {
     margin: 0 -10px 0px -10px;
     padding: 0 10px 0px 10px;
   }
+  section#intro {
+    background-color: #303030;
+    margin: 0 -10px 0px -10px;
+    padding: 0 10px 0px 10px;
+  }
   ul.headshots {
     padding: 10px 0 10px 0;
     margin: 0 0 0px 0;
@@ -1210,10 +1215,6 @@ a.btn-cta {
 ------------------------------------------------------------------ */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
-  header a.brand {
-    background-image: url("../img/logo@2x.png");
-    background-size: 200px 57px;
-  }
   a.plus {
     background-image: url("../img/open@2x.png");
     background-size: 22px 22px;

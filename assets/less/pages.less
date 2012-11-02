@@ -580,6 +580,42 @@ img.so-skype {
 	color: @white;
 }
 
+.hero-banner {
+	#font > .sans-serif(@baseFontSize, 400, @baseLineHeight);
+	background: @slateLight;
+	border: 1px solid @printerLighter;
+	position: relative;
+	padding: 20px;
+	margin-bottom:20px;
+	position: relative;
+}
+
+section#intro {
+	.box-shadow(inset 0px 1px 4px 0px rgba(0,0,0,.2));
+}
+
+section#intro .greeting {
+	text-align: center;
+}
+
+section#intro .greeting h2 {
+	#font > .sp-sans-serif(@baseFontSize + 10, 600, @baseLineHeight + 10);
+	color: @white;
+	text-shadow: 0 1px 2px rgba(0,0,0,.5);
+	text-transform: uppercase;
+}
+
+section#intro .greeting p {
+	color: @grayLight;
+	//text-align: left;
+	padding: 0 10px;
+}
+
+section#intro p.mute {
+	color: @grayLight;
+	//text-align: center;
+}
+
 section#content::before {
 	content: "";
 	display: block;

@@ -653,6 +653,41 @@ img.so-skype {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   color: #ffffff;
 }
+.hero-banner {
+  font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  background: #303030;
+  border: 1px solid #313131;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+section#intro {
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+section#intro .greeting {
+  text-align: center;
+}
+section#intro .greeting h2 {
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+section#intro .greeting p {
+  color: #999999;
+  padding: 0 10px;
+}
+section#intro p.mute {
+  color: #999999;
+}
 section#content::before {
   content: "";
   display: block;
@@ -1613,6 +1648,11 @@ p.contactlead {
     margin: 0 -10px 0px -10px;
     padding: 0 10px 0px 10px;
   }
+  section#intro {
+    background-color: #303030;
+    margin: 0 -10px 0px -10px;
+    padding: 0 10px 0px 10px;
+  }
   ul.headshots {
     padding: 10px 0 10px 0;
     margin: 0 0 0px 0;
@@ -1990,10 +2030,6 @@ p.contactlead {
 ------------------------------------------------------------------ */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
-  header a.brand {
-    background-image: url("../img/logo@2x.png");
-    background-size: 200px 57px;
-  }
   a.plus {
     background-image: url("../img/open@2x.png");
     background-size: 22px 22px;
