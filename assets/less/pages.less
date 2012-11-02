@@ -58,13 +58,13 @@ header {
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -40px;
-	//background-color: @bodyBackground;
+	background-color: @bodyBackground;
 }
 
 .push {
 	height: 40px;
 	clear: both;
-	//background-color: @bodyBackground;
+	background-color: @bodyBackground;
 }
 
 footer {
@@ -74,7 +74,7 @@ footer {
 	font-size: @baseFontSize - 2;
 	color: @grayLight;
 	height: 40px;
-	//background-color: @bodyBackground;
+	background-color: @bodyBackground;
 }
 
 /* Fixed Footer Bottom */
@@ -580,6 +580,18 @@ img.so-skype {
 	color: @white;
 }
 
+#content .greeting a.btn {
+	margin-top: 5px;
+	//border: none;
+	//font-size: @baseFontSize;
+	//font-weight: 600;
+	//color: darken(@accentColor, 30%);
+	//text-shadow: 0 1px lighten(@accentColor, 5%);
+	//.box-shadow(inset 0 1px 0px 0 rgba(255,255,255,.2), 0 1px 2px 0 rgba(0,0,0,.5));
+	//text-transform: uppercase;
+	
+}
+
 .hero-banner {
 	#font > .sans-serif(@baseFontSize, 400, @baseLineHeight);
 	background: @slateLight;
@@ -620,6 +632,7 @@ section#content::before {
 	content: "";
 	display: block;
 	position: absolute;
+	overflow: hidden;
 	top:0;
 	left:0;
 	right: 0;
@@ -637,6 +650,7 @@ section#content {
 	padding-bottom: 0px;
 	background: transparent;
 	position: relative;
+	overflow: hidden;
 	//background: @white url(@bgWood1x) repeat-x;
 	//border-top: 1px solid @grayDark;
 	//border-bottom: 1px solid @grayDark;

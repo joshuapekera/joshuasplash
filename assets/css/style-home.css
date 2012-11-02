@@ -1082,6 +1082,15 @@ a.btn-cta {
     padding: 20px 30px;
   }
   /* Home Page Style Adjustments */
+  #content .greeting {
+    margin-top: 10%;
+  }
+  #content .greeting h2 {
+    font-size: 30px;
+  }
+  #content .greeting p {
+    font-size: 16px;
+  }
   section#buckets {
     text-align: left;
   }

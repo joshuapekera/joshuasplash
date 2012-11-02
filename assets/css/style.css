@@ -159,10 +159,12 @@ header {
   height: auto !important;
   height: 100%;
   margin: 0 auto -40px;
+  background-color: #ffffff;
 }
 .push {
   height: 40px;
   clear: both;
+  background-color: #ffffff;
 }
 footer {
   width: 100%;
@@ -171,6 +173,7 @@ footer {
   font-size: 13px;
   color: #999999;
   height: 40px;
+  background-color: #ffffff;
 }
 /* Fixed Footer Bottom */
 /* Links */
@@ -653,6 +656,9 @@ img.so-skype {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   color: #ffffff;
 }
+#content .greeting a.btn {
+  margin-top: 5px;
+}
 .hero-banner {
   font-family: 'proxima-nova', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -692,6 +698,7 @@ section#content::before {
   content: "";
   display: block;
   position: absolute;
+  overflow: hidden;
   top: 0;
   left: 0;
   right: 0;
@@ -713,6 +720,7 @@ section#content {
   padding-bottom: 0px;
   background: transparent;
   position: relative;
+  overflow: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -1897,6 +1905,15 @@ p.contactlead {
     padding: 20px 30px;
   }
   /* Home Page Style Adjustments */
+  #content .greeting {
+    margin-top: 10%;
+  }
+  #content .greeting h2 {
+    font-size: 30px;
+  }
+  #content .greeting p {
+    font-size: 16px;
+  }
   section#buckets {
     text-align: left;
   }

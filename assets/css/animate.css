@@ -4435,7 +4435,7 @@ Copyright (c) 2012 Dan Eden
   animation-iteration-count: none;
 }
 /* Home Page */
-#cover {
+#content {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -ms-animation-duration: 1s;
@@ -4452,17 +4452,34 @@ Copyright (c) 2012 Dan Eden
   -o-animation-iteration-count: none;
   animation-iteration-count: none;
 }
+#cover {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: none;
+  -moz-animation-iteration-count: none;
+  -ms-animation-iteration-count: none;
+  -o-animation-iteration-count: none;
+  animation-iteration-count: none;
+}
 #bonjour {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -ms-animation-duration: 1s;
   -o-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -ms-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-animation-iteration-count: none;
   -moz-animation-iteration-count: none;
   -ms-animation-iteration-count: none;
