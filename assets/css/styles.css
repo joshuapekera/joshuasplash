@@ -2397,25 +2397,6 @@ a.backtotop:hover {
   #content .greeting p {
     font-size: 16px;
   }
-  section#buckets {
-    text-align: left;
-  }
-  #buckets h3 {
-    font-size: 15px;
-    padding: 20px 0px 25px 5px;
-  }
-  #buckets h3::before {
-    top: 30px;
-  }
-  #buckets p {
-    font-size: 14px;
-    padding: 10px 0px 0px 0px;
-    text-align: center;
-  }
-  a.bucket::after {
-    top: 28%;
-    right: 12px;
-  }
   /* Contact Icons */
   ul.contact {
     list-style: none;
