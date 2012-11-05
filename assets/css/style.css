@@ -159,11 +159,11 @@ header {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -40px;
+  margin: 0 auto -80px;
   background-color: #ffffff;
 }
 .push {
-  height: 40px;
+  height: 80px;
   clear: both;
   background-color: #ffffff;
 }
@@ -778,6 +778,7 @@ section#buckets {
   color: #1b7ad6;
   width: 100%;
   margin-bottom: 10px;
+  background-color: #ffffff;
 }
 section#buckets img.thumbnail {
   box-shadow: none;
@@ -937,6 +938,8 @@ ul.headshots li img {
   border: 1px solid #313131;
   padding: 20px;
   margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   position: relative;
   -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
@@ -977,20 +980,25 @@ ul.headshots li img {
 .paper-banner a {
   float: right;
   display: inline-block;
-  padding-top: 6px;
   text-transform: uppercase;
 }
 .paper-banner a:hover,
 .paper-banner a:focus,
 .paper-banner a:active {
-  color: #1b7ad6;
+  color: #ffffff;
+}
+.paper-banner a.cta {
+  padding-top: 6px;
 }
 .canvas,
 .canvas-banner {
   padding: 0 10px;
   height: auto;
+  text-align: center;
   margin-bottom: 20px;
   margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
   line-height: 15px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
@@ -1001,9 +1009,12 @@ ul.headshots li img {
   margin-bottom: 0px;
   padding: 20px;
 }
+.canvas-banner {
+  margin-top: 20px;
+}
 .canvas .paper-header,
 .canvas-banner {
-  background-color: #f5f5f5;
+  background-color: #303030;
 }
 .fullcanvas {
   padding: 0;
@@ -1015,18 +1026,17 @@ section#letterhead {
   text-align: center;
 }
 .paper-header {
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #eeeeee;
+  background-color: #303030;
   padding: 10px 0 10px 0;
   margin: -20px -30px;
 }
 section#letterhead h2 {
-  color: #999999;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 23px;
   letter-spacing: .1em;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   line-height: 24px;
 }
@@ -1097,13 +1107,14 @@ ul.contact li span {
   transition: color 0.4s linear;
 }
 ul.contact li.emailme a span:hover {
-  color: #1b7ad6;
+  color: #ffffff;
   text-decoration: none;
 }
 /* Resume Banner */
 .resumeicons,
 .contactmeicons {
   display: inline-block;
+  margin-top: 5px;
   position: relative;
 }
 .paper-banner .banner .resumeicons a,
@@ -1485,7 +1496,7 @@ p.contactlead {
   }
   .paper {
     padding: 20px 10px;
-    margin: 40px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
   }
   a.plus {
     display: block;
@@ -1513,6 +1524,10 @@ p.contactlead {
   .paper-content p {
     text-align: left;
   }
+  .paper-banner {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .paper-banner a {
     display: block;
     float: none;
@@ -1520,9 +1535,6 @@ p.contactlead {
   .banner {
     display: block;
     position: relative;
-  }
-  .paper-banner a {
-    padding-top: 4px;
   }
   .paper-banner .banner .resumeicons a,
   .paper-banner .banner .contactmeicons a {
@@ -1604,11 +1616,27 @@ p.contactlead {
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
-    color: #fff;
-    border: solid 1px #d0d0d0;
-    background-color: #fff;
+    color: #ffffff;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    background-color: #262626;
     display: inline-block;
     margin: 10px 10px 0;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+  }
+  ul.contact li:hover,
+  ul.contact li:active,
+  ul.contact li.active,
+  ul.contact li:focus {
+    -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    background-color: #232323;
   }
   ul.contact li span {
     display: none;
@@ -1724,6 +1752,8 @@ p.contactlead {
   .canvas,
   .canvas-banner {
     margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .portfoliofeature h2 {
     font-size: 18px;
@@ -1888,6 +1918,12 @@ p.contactlead {
   #content .greeting p {
     font-size: 16px;
   }
+  /* Portfolio Page */
+  .canvas,
+  .canvas-banner {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   /* Contact Icons */
   ul.contact {
     list-style: none;
@@ -1902,11 +1938,27 @@ p.contactlead {
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
-    color: #fff;
-    border: solid 1px #d0d0d0;
-    background-color: #fff;
+    color: #ffffff;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    background-color: #262626;
     display: inline-block;
     margin: 10px 10px 0;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+  }
+  ul.contact li:hover,
+  ul.contact li:active,
+  ul.contact li.active,
+  ul.contact li:focus {
+    -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    background-color: #232323;
   }
   ul.contact li span {
     display: none;

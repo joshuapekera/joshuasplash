@@ -57,12 +57,12 @@ header {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -40px;
+	margin: 0 auto -80px;
 	background-color: @bodyBackground;
 }
 
 .push {
-	height: 40px;
+	height: 80px;
 	clear: both;
 	background-color: @bodyBackground;
 }
@@ -719,6 +719,7 @@ section#buckets {
 	color: @accentColor;
 	width: 100%;
 	margin-bottom: 10px;
+	background-color: @white;
 	//padding-top: 30px;
 }
 
@@ -891,6 +892,8 @@ ul.headshots li img {
 	position: relative;
 	padding: 20px;
 	margin-bottom:20px;
+	margin-left: 40px;
+	margin-right: 40px;
 	position: relative;
 	.box-shadow(0px 1px 2px 0px rgba(0,0,0,.2));
 }
@@ -932,21 +935,28 @@ ul.headshots li img {
 .paper-banner a {
 	float: right;
 	display: inline-block;
-	padding-top: 6px;
+	//padding-top: 6px;
 	text-transform: uppercase;
 	&:hover,
 	&:focus,
 	&:active {
-		color: @accentColor;
+		color: @white;
 	}
 	
+}
+
+.paper-banner a.cta {
+	padding-top: 6px;
 }
 
 .canvas, .canvas-banner {
 	padding:0 10px;
 	height:auto;
+	text-align: center;
 	margin-bottom:20px;
 	margin-top:60px;
+	margin-left: 40px;
+	margin-right: 40px;
 	line-height:15px;
 	background:@white;
 	.box-shadow(0px 1px 2px 0px rgba(0,0,0,.2));
@@ -957,8 +967,13 @@ ul.headshots li img {
 	padding: 20px;
 }
 
+.canvas-banner {
+	margin-top: 20px;
+}
+
 .canvas .paper-header, .canvas-banner {
-	background-color: @graySmoke;
+	//background-color: @graySmoke;
+	background-color: @slateLight;
 }
 
 .fullcanvas {
@@ -975,19 +990,19 @@ section#letterhead {
 }
 
 .paper-header {
-	background-color: @graySmoke;
-	border-bottom: 1px solid @grayLighter;
+	background-color: @slateLight;
+	//border-bottom: 1px solid @grayLighter;
 	padding: 10px 0 10px 0;
 	margin: -20px -30px;
 }
 
 section#letterhead h2 {
-	color: @grayLight;
+	color: @white;
 	text-transform: uppercase;
 	font-size: @baseFontSize + 8;
 	letter-spacing: .1em;
 	font-family: @spFontFamily;
-	font-weight: 700;
+	font-weight: 500;
 	font-style: normal;
 	line-height: 24px;
 }
@@ -1055,7 +1070,7 @@ ul.contact li span {
 }
 
 ul.contact li.emailme a span:hover {
-	color:@accentColor;
+	color:@white;
 	text-decoration:none
 }
 
@@ -1063,6 +1078,7 @@ ul.contact li.emailme a span:hover {
 
 .resumeicons, .contactmeicons {
 	display:inline-block;
+	margin-top: 5px;
 	position: relative;
 }
 

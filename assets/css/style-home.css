@@ -684,7 +684,7 @@ a.btn-cta {
   }
   .paper {
     padding: 20px 10px;
-    margin: 40px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
   }
   a.plus {
     display: block;
@@ -712,6 +712,10 @@ a.btn-cta {
   .paper-content p {
     text-align: left;
   }
+  .paper-banner {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .paper-banner a {
     display: block;
     float: none;
@@ -719,9 +723,6 @@ a.btn-cta {
   .banner {
     display: block;
     position: relative;
-  }
-  .paper-banner a {
-    padding-top: 4px;
   }
   .paper-banner .banner .resumeicons a,
   .paper-banner .banner .contactmeicons a {
@@ -803,11 +804,27 @@ a.btn-cta {
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
-    color: #fff;
-    border: solid 1px #d0d0d0;
-    background-color: #fff;
+    color: #ffffff;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    background-color: #262626;
     display: inline-block;
     margin: 10px 10px 0;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+  }
+  ul.contact li:hover,
+  ul.contact li:active,
+  ul.contact li.active,
+  ul.contact li:focus {
+    -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    background-color: #232323;
   }
   ul.contact li span {
     display: none;
@@ -923,6 +940,8 @@ a.btn-cta {
   .canvas,
   .canvas-banner {
     margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .portfoliofeature h2 {
     font-size: 18px;
@@ -1087,6 +1106,12 @@ a.btn-cta {
   #content .greeting p {
     font-size: 16px;
   }
+  /* Portfolio Page */
+  .canvas,
+  .canvas-banner {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   /* Contact Icons */
   ul.contact {
     list-style: none;
@@ -1101,11 +1126,27 @@ a.btn-cta {
     border-radius: 8px;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
-    color: #fff;
-    border: solid 1px #d0d0d0;
-    background-color: #fff;
+    color: #ffffff;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 1px 0px rgba(255, 255, 255, 0.12), 0 1px 1px 0px rgba(0, 0, 0, 0.5);
+    background-color: #262626;
     display: inline-block;
     margin: 10px 10px 0;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+  }
+  ul.contact li:hover,
+  ul.contact li:active,
+  ul.contact li.active,
+  ul.contact li:focus {
+    -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
+    background-color: #232323;
   }
   ul.contact li span {
     display: none;
