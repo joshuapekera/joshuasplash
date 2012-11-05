@@ -113,12 +113,12 @@ header .container {
 header a.brand {
 	font-family: @spFontFamily;
 	position: relative;
-	display: inline-block;
+	display: block;
 	margin-top: 20px;
 	font-size: @baseLineHeight + 2;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-align: left;
+	float: left;
 	color: @navbarBrandColor;
 	.backface-visibility(hidden);
 	//text-shadow: 0 1px @grayDark;
@@ -301,10 +301,9 @@ a.plus {
 	background-repeat: no-repeat;
 	height: 22px;
 	width: 22px;
-	top: 0px;
-	right: -10px;
-	padding: 15px;
-	padding-bottom: 14px;
+	top: 10px;
+	right: 5px;
+	padding: 5px;
 	background-position: center;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	.backface-visibility(hidden);
