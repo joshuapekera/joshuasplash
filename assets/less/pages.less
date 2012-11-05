@@ -224,17 +224,17 @@ nav .active a:focus {
 */
 
 .crumb h1 {
-	font-size: @baseFontSize;
-	line-height: @baseLineHeight - 5;
-	font-weight: 400;
-	color: @grayLighter;
-	//display: inline-block;
-	display: none;
+	font-size: @baseFontSize + 9;
+	line-height: @baseLineHeight;
+	font-weight: 600;
+	color: @white;
+	display: inline-block;
+	//display: none;
 	padding: 6px 0 0 0;
-	margin: 0 10px 0 0;
+	margin: 30px 0px 0 0;
 	text-transform: uppercase;
 	letter-spacing: .08em;
-	//text-shadow: 0 1px rgba(0,0,0,1);
+	text-shadow: 0 1px 2px rgba(0,0,0,.5);
 }
 
 .crumb small {
@@ -252,10 +252,6 @@ hr {
 	margin: 5px 0;
 	border-top: 1px solid @hrBorderTop;
 	border-bottom: 1px solid @hrBorderBottom;
-}
-
-hr + .crumb + hr {
-	margin-bottom: 20px;
 }
 
 /* Viewport Slideout */
@@ -305,9 +301,10 @@ a.plus {
 	background-repeat: no-repeat;
 	height: 22px;
 	width: 22px;
-	top: 10px;
-	right: 5px;
-	padding: 5px;
+	top: 0px;
+	right: -10px;
+	padding: 15px;
+	padding-bottom: 14px;
 	background-position: center;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	.backface-visibility(hidden);
@@ -807,7 +804,7 @@ ul.headshots li img {
 .paper {
 	padding:20px 30px;
 	height:auto;
-	margin: 80px 40px 20px 40px;
+	margin: 20px 40px 20px 40px;
 	line-height:15px;
 	color: @black;
 	background:@white;
@@ -954,7 +951,7 @@ ul.headshots li img {
 	height:auto;
 	text-align: center;
 	margin-bottom:20px;
-	margin-top:60px;
+	margin-top:20px;
 	margin-left: 40px;
 	margin-right: 40px;
 	line-height:15px;
@@ -1021,7 +1018,8 @@ section#letterhead p, .paper-header p {
 /* Contact Icons */
 ul.contact {
 	list-style:none;
-	margin:0 auto
+	margin:0 auto;
+	margin-top: 5px;
 }
 
 ul.contact li {

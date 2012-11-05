@@ -40,6 +40,7 @@
 	<link href="/assets/css/main.css" rel="stylesheet">
 	<link href="/assets/css/fluid.css" rel="stylesheet">
 	<link href="/assets/css/style.css" rel="stylesheet">
+	<link href="/assets/css/basic-layout.css" rel="stylesheet">
 	
 	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -72,10 +73,9 @@
 		<div class="scrollable">
 			<ul>
 				<li><a href="/"><img src="/assets/img/icon-home@2x.png" class="so-home" alt="icon">Home</a></li>
-				<!-- <li><a href="/coverletter" class="" id="tab-home"><img src="/assets/img/icon-coverletter@2x.png" class="so-home" alt="icon">Cover Letter</a></li> -->
+				<li><a href="/coverletter" class="" id="tab-home"><img src="/assets/img/icon-coverletter@2x.png" class="so-home" alt="icon">Cover Letter</a></li>
 				<li><a href="/resume" class="" id="tab-resume"><img src="/assets/img/icon-resume@2x.png" class="so-home" alt="icon">Resume</a></li>
 				<li><a href="/portfolio" class="" id="tab-portfolio"><img src="/assets/img/icon-portfolio@2x.png" class="so-home" alt="icon">Portfolio</a></li>
-				<!-- <li><a href="/process" class="" id="tab-process"><img src="/assets/img/icon-process@2x.png" class="so-home" alt="icon">Process</a></li> -->
 				<li><a href="/contact" class="" id="tab-contact"><img src="/assets/img/icon-contact@2x.png" class="so-home" alt="icon">Contact</a></li>
 			</ul>
 			<div class="separator">Follow Me</div>
@@ -100,7 +100,8 @@
 					<a class="brand" id="logo" href="/">Joshua Pekera</a>
 					<nav>
 						<ul>
-							<li><a href="/" class="navtext active">Home</a></li>
+							<li><a href="/" class="navtext">Home</a></li>
+							<li><a href="/coverletter" class="navtext active">Cover Letter</a></li>
 							<li><a href="/resume" class="navtext">Resume</a></li>
 							<li><a href="/portfolio" class="navtext">Portfolio</a></li>
 							<li><a href="/contact" class="navtext">Contact</a></li>
@@ -110,15 +111,13 @@
 			</header>
 		
 			<div class="container">
-				<hr>
 				<div class="crumb">
 					<div class="row-fluid">
-						<div class="span12">
-							<h1>Cover Letter</h1><small>Why I want to work at Baldwin&amp;</small>
+						<div class="span12 animated fadeInDown" id="page-title">
+							<h1>Cover Letter</h1>
 						</div>
 					</div>
 				</div>
-				<hr>
 				
 				<div class="paper animated fadeIn" id="primarycontent"> <!-- start paper -->
 					
@@ -152,11 +151,11 @@
 						</div>
 						<div class="row-fluid">
 							<article class="span8 offset3">
-								<p class="introduction">To David Baldwin,</p>
+								<p class="introduction">Bonjour,</p>
 								
-								<p>My name is Joshua Pekera. I am a creative that loves to code, design, think, plan, write, strategize and experiment. I heard that you are looking for someone like that to join your team.</p>
+								<p>My name is Joshua Pekera. I am a creative that loves to code, design, think, plan, write, strategize and experiment. Perhaps you are looking for someone like that to join your team? You have visited the right site if that is the case.</p>
 								
-								<p>An agency that looks at its entire team as creatives is a rarity. I believe it is the reflection of the people and their combined passions that give a company its soul. It is the diversity of a team’s combined life experiences that champion great ideas and see them realized in exceptional creative work. When a company’s leader realizes that and seeks to weave it in to the company culture then he has developed a vibrant company defined by its team members. This is what I believe you are developing Baldwin&amp; into as evident by your interview with Ideasicle when you said "a company is a group of people not a building". This is why I would like the opportunity to join your team.</p>
+								<p>I believe it is the reflection of the people and their combined passions that give a company its soul. It is the diversity of a team’s combined life experiences that champion great ideas and see them realized in exceptional creative work. When a company's leaders realize that and seek to weave it in to the company culture then they have developed a vibrant company defined by its team members. I would like the opportunity to join your team if that is the type of company culture you foster.</p>
 								
 								<p>As a college graduate, a mentor recruited me to go to KSI, Inc. Over 2 years I worked on custom environmental graphics and ornamental structures that went in to sites like Universal Studios and Dallas Cowboys Stadium. It was the changing landscape of advertising coupled with the growth of social media, mobile devices and rich web applications that gave me aspirations to pursue my true passion. In 2009, I saw an opportunity to start my own boutique digital agency. This ultimately brought me to my current position as Creative Director at SM Agency. In that time, I also cofounded The Agorean, an online social news organization.</p>
 								
@@ -164,7 +163,7 @@
 								
 								<p>My time at SM has given me the opportunity to work on a range of creative work in both digital and traditional mediums. I can contribute to several areas of your creative team. My approach to all creative work is to understand the client and the problem they need to solve. I have always felt it is my responsibility to help define an objective that solves a problem when achieved. All ideation regardless of origin, inspiration or approach attempts to achieve that objective. My diverse experience in the digital landscape gives me the ability to contribute a creative and technical perspective with in a team through out the creative process. I can weigh in on the possible and hypothetical especially when it pertains to emerging technology.</p>
 								
-								<p>Your time is valuable so thank you for reading through this entire letter. I hope you will consider me a candidate as your next creative and for the front-end developer position. I have included a link to my portfolio for you to review. I would be happy to answer any questions you may have for me. I hope to hear from you soon.</p>
+								<p>Your time is valuable so thank you for reading through this entire letter. Please feel free to contact me through any of the methods I have made available on this site. I have included samples of my work for you to review. I would also be happy to answer any questions you may have for me.</p>
 
 								
 								
@@ -189,7 +188,7 @@
 							</div>
 						</div>
 						<div class="span6">
-							<a href="/resume" title="">Read over my resume</a>
+							<a class="cta" href="/resume" title="">Read over my resume</a>
 						</div>
 					</div>
 					</div>
@@ -202,7 +201,7 @@
 								<h3 id="folio">Portfolio</h3>
 							</div>
 							<div class="span6">
-								<a class="" href="/portfolio" title="">View some samples of my work</a>
+								<a class="cta" href="/portfolio" title="">View some samples of my work</a>
 							</div>
 						</div>
 					</div>

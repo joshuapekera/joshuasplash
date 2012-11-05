@@ -643,7 +643,7 @@ a.btn-cta {
   .crumb h1 {
     font-size: 18px;
     padding: 6px 0 0 0;
-    margin: 0px 0;
+    margin: 10px 0 0 0;
     text-transform: uppercase;
     letter-spacing: .08em;
     display: block;
@@ -684,7 +684,7 @@ a.btn-cta {
   }
   .paper {
     padding: 20px 10px;
-    margin: 20px 0px 20px 0px;
+    margin: 10px 0px 20px 0px;
   }
   a.plus {
     display: block;
@@ -937,7 +937,7 @@ a.btn-cta {
   ------------------------------------ */
   .canvas,
   .canvas-banner {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 0px;
     margin-right: 0px;
   }
