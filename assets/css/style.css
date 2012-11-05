@@ -147,7 +147,7 @@ body::after {
   background-color: #ffffff;
 }
 header {
-  min-height: 100px;
+  min-height: 80px;
   vertical-align: middle;
   padding-right: 20px;
   padding-left: 20px;
@@ -175,6 +175,8 @@ footer {
   color: #999999;
   height: 40px;
   background-color: #ffffff;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 /* Fixed Footer Bottom */
 /* Links */
@@ -848,8 +850,7 @@ ul.headshots li img {
 .paper {
   padding: 20px 30px;
   height: auto;
-  margin-bottom: 20px;
-  margin-top: 40px;
+  margin: 80px 40px 20px 40px;
   line-height: 15px;
   color: #000000;
   background: #ffffff;
@@ -1428,6 +1429,10 @@ p.contactlead {
     margin: 0px -10px 0px -10px;
     padding: 0px 10px 0px 10px;
   }
+  footer {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
   header a.brand {
     margin-top: 0px;
   }
@@ -1481,6 +1486,7 @@ p.contactlead {
   }
   .paper {
     padding: 20px 10px;
+    margin: 40px 0px 20px 0px;
   }
   a.plus {
     display: block;
