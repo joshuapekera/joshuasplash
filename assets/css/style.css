@@ -1624,14 +1624,13 @@ p.contactlead {
     background-color: #262626;
     display: inline-block;
     margin: 10px 10px 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
     -o-transition: all 200ms;
     transition: all 200ms;
   }
   ul.contact li:hover,
-  ul.contact li:active,
-  ul.contact li.active,
   ul.contact li:focus {
     -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
     -moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
@@ -1946,14 +1945,13 @@ p.contactlead {
     background-color: #262626;
     display: inline-block;
     margin: 10px 10px 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
     -o-transition: all 200ms;
     transition: all 200ms;
   }
   ul.contact li:hover,
-  ul.contact li:active,
-  ul.contact li.active,
   ul.contact li:focus {
     -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
     -moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5), 0 1px 1px 0px rgba(255, 255, 255, 0.1);
