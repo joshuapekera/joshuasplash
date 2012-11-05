@@ -920,13 +920,17 @@ a.btn-cta {
   }
   /* Portfolio Page Styles
   ------------------------------------ */
+  .canvas,
+  .canvas-banner {
+    margin-top: 20px;
+  }
   .portfoliofeature h2 {
-    font-size: 15px;
+    font-size: 18px;
     display: block;
     padding: 20px 10px 5px 10px;
   }
   .portfoliofeature .details .summary {
-    font-size: 10px;
+    font-size: 15px;
     display: block;
     padding: 0px 10px 20px 10px;
     border-bottom: 1px solid #f5f5f5;

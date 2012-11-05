@@ -33,37 +33,30 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body {
+body,
+#viewport,
+#page,
+.wrapper,
+.push {
   background: #612816 url("/assets/img/bg2-wood@1x.jpg") repeat 0 0;
   overflow-y: visible;
 }
-#viewport,
-#page,
-.push {
-  background-color: transparent;
-}
 .wrapper {
   background: transparent url("/assets/img/bg-lighting@1x.jpg") repeat-x;
-  overflow-y: visible;
 }
-#primary-container {
-  background-color: transparent;
-}
-/*
 @media (max-width: 767px) {
-	.wrapper {
-	background: black url("/assets/img/bg2-wood@1x.jpg") repeat 0 0;
-	}
+  .wrapper {
+    background: #000000 url("/assets/img/bg2-wood@1x.jpg") repeat 0 0;
+  }
 }
-*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
-  body {
-    background: url("/assets/img/bg2-wood@2x.jpg") repeat;
-    background-size: 203px 317px;
-  }
-  .wrapper {
-    background: url("/assets/img/bg-lighting@2x.jpg") repeat-x;
+  body,
+  #viewport,
+  #page,
+  .wrapper,
+  .push {
+    background: #612816 url("/assets/img/bg2-wood@1x.jpg") repeat 0 0;
     background-size: 512px 511px;
   }
 }
