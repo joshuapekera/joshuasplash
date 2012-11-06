@@ -2418,7 +2418,8 @@ a.backtotop:hover {
     margin-top: 10%;
   }
   #content .greeting h2 {
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 20px;
   }
   #content .greeting p {
     font-size: 16px;
