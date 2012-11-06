@@ -45,18 +45,7 @@ body,
 .wrapper {
   background: transparent url("/assets/img/bg-lighting@1x.jpg") repeat-x;
 }
-header {
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-}
 @media (max-width: 767px) {
-  body {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
   header {
     -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
     -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
@@ -64,12 +53,6 @@ header {
   }
   .wrapper {
     background: #612816 url("/assets/img/bg2-wood@1x.jpg") repeat 0 0;
-  }
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */
-  .wrapper {
-    background: transparent url("/assets/img/bg-lighting@2x.jpg") repeat-x;
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) and (max-width: 480px) {
@@ -80,5 +63,11 @@ header {
   .wrapper {
     background: #612816 url("/assets/img/bg2-wood@2x.jpg") repeat 0 0;
     background-size: 512px 511px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) and (max-width: 768px) {
+  /* Styles */
+  .wrapper {
+    background: transparent url("/assets/img/bg-lighting@2x.jpg") repeat-x;
   }
 }

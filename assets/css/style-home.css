@@ -1094,6 +1094,10 @@ a.btn-cta {
   .paper {
     padding: 20px 30px;
   }
+  .paper-banner {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   /* Home Page Style Adjustments */
   #content .greeting {
     margin-top: 10%;
@@ -1236,7 +1240,7 @@ a.btn-cta {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
   nav a {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 10px 0px 10px;
   }
 }
 /* Slidely Wide Desktop Display
