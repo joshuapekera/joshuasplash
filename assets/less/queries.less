@@ -646,11 +646,20 @@ ul.contact li {
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
-	color: #fff;
-	border: solid 1px #d0d0d0;
-	background-color: #fff;
+	color: @white;
+	border: solid 1px rgba(0,0,0,.15);
+	.box-shadow(inset 0 1px 1px 0px rgba(255,255,255,.12), 0 1px 1px 0px rgba(0,0,0,.5));
+	//.box-shadow(inset 0 1px 1px 0 rgba(255,255,255,.1), 0 1px 1px 0px rgba(0,0,0,.5));
+	//.box-shadow(inset 0 0px 1px 1px rgba(255,255,255,.04));
+	background-color: darken(@slateLight, 4%);
 	display: inline-block;
 	margin: 10px 10px 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	.transition(all 200ms );
+	&:hover {
+		.box-shadow(inset 0 1px 1px 0 rgba(0,0,0,.5), 0 1px 1px 0px rgba(255,255,255,.1));
+		background-color: darken(@slateLight, 5%);
+	}
 }
 
 ul.contact li span {
