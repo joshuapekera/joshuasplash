@@ -634,6 +634,42 @@ img.so-skype {
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+section#content {
+  text-align: center;
+  color: #1b7ad6;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+section#content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff url("../img/bg-wood@1x.jpg") repeat-x;
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+section#content .container {
+  position: relative;
+  z-index: 2;
+}
 #content .greeting {
   text-align: left;
   margin-top: 25%;
@@ -689,38 +725,6 @@ section#intro .greeting p {
 }
 section#intro p.mute {
   color: #999999;
-}
-section#content::before {
-  content: "";
-  display: block;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ffffff url("../img/bg-wood@1x.jpg") repeat-x;
-  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-section#content {
-  text-align: center;
-  color: #1b7ad6;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  background: transparent;
-  position: relative;
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 #content h2 {
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
