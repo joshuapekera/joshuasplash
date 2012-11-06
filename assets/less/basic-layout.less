@@ -35,20 +35,20 @@ header {
 @media 
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5)
-and (max-width: 480px) {
-/* Styles */
-	body, #viewport, #page,.wrapper {
-		background: #612816 url("/assets/img/bg2-wood@2x.jpg") repeat 0 0;
-		background-size: 512px 511px;
+and (min-width: 768px) {
+	/* Styles */
+	.wrapper {
+		background: transparent url("/assets/img/bg-lighting@2x.jpg") repeat-x;
 	}
 }
 
 @media 
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5)
-and (min-width: 768px) {
-	/* Styles */
-	.wrapper {
-		background: transparent url("/assets/img/bg-lighting@2x.jpg") repeat-x;
+and (max-width: 480px) {
+/* Styles */
+	body, #viewport, #page,.wrapper {
+		background: #612816 url("/assets/img/bg2-wood@2x.jpg") repeat 0 0;
+		background-size: 512px 511px;
 	}
 }
