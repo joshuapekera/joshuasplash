@@ -663,6 +663,9 @@ img.so-skype {
   padding: 20px;
   position: relative;
 }
+.hero-banner .greeting a {
+  color: #ffffff;
+}
 section#intro {
   background: #303030;
   border: 1px solid #313131;
