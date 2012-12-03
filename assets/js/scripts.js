@@ -37,11 +37,6 @@
 	}
 })( this );
 
-/*
-* Viewport Slideout
-* (c) Joshua Pekera, joshuapekera.com
-* MIT License
-*/
 (function() {
     
 	var body = document.body;
