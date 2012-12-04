@@ -1,0 +1,73 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/*
+// CSS Webkit Image-Set for retina image replacement
+// ---------------------------------------------------------
+.image-set (@imageSource, @imageSource1x, @imageSource2x){
+	background-image: url(@{imageSource}); 
+	background-image: -webkit-image-set( url(@{imageSource}) ~ "1x", url(@{imageSource2x}) ~ "2x");
+}
+*/
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+#viewport,
+#page {
+  background: #612816 url("/assets/img/bg2-wood@1x.jpg") repeat 0 0;
+  overflow-y: visible;
+}
+.push {
+  background: transparent;
+}
+.wrapper {
+  background: transparent url("/assets/img/bg-lighting@1x.jpg") repeat-x;
+}
+@media (max-width: 767px) {
+  header {
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  }
+  .wrapper {
+    background: #612816 url("/assets/img/bg2-wood@1x.jpg") repeat 0 0;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) and (min-width: 768px) {
+  /* Styles */
+  .wrapper {
+    background: transparent url("/assets/img/bg-lighting@2x.jpg") repeat-x;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) and (max-width: 480px) {
+  /* Styles */
+  body,
+  #viewport,
+  #page,
+  .wrapper {
+    background: #612816 url("/assets/img/bg2-wood@2x.jpg") repeat 0 0;
+    background-size: 512px 511px;
+  }
+}

@@ -1,0 +1,857 @@
+/*:::PRIMARY:::*//* Landscape phone to portrait tablet 
+----------------------------------------*/
+@media (max-width: 767px) {
+/* Styles */
+
+body {
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.row-fluid .offset3:first-child {
+	margin-left: 0;
+}
+
+nav {display: none}
+
+section {
+	margin: 0 -10px 20px -10px;
+	padding: 0 10px 10px 10px;
+}
+section#letterhead {
+	margin: 0 0px 0 0px;
+}
+
+header {
+	min-height: 50px;
+}
+
+header, footer, #page {
+	margin: 0px -10px 0px -10px;
+	padding: 0px 10px 0px 10px;
+}
+
+footer {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+header a.brand {
+	margin-top: 0px;
+}
+
+.btn-block-fluid {
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+/* Global Crumb */
+
+.crumb h1 {
+	font-size: @baseFontSize + 3;
+	padding: 6px 0 0 0;
+	margin: 10px 0 0 0;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	display: block; 
+}
+
+.crumb small {
+	display: none;
+}
+
+/*
+crumb h1 {
+	font-size: @baseFontSize;
+	color: @slate;
+	padding: 2px 0 0 0;
+	margin: 5px 0;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	text-shadow: 0 1px rgba(255,255,255,.05);
+	text-align: center;
+	display: block; 
+}
+
+.crumb small {
+	font-size: @baseFontSize;
+	display: none;
+	padding: 2px 10px 0 10px;
+	margin: 0 0 5px 0;
+	text-shadow: 0 1px rgba(255,255,255,.05);
+}
+*/
+
+/* Globalnav Page slide */
+
+#page, .paper, .canvas, .paper-banner {
+	.backface-visibility(hidden);
+}
+
+.paper {
+	padding: 20px 10px;
+	margin: 10px 0px 20px 0px;
+}
+
+a.plus {
+	display: block;
+	position: absolute;
+	background-image: url("@{iconsTrigger}");
+	background-repeat: no-repeat;
+}
+
+/* Basic Page Styles
+------------------------------------ */
+.paper-banner, .paper-content, .paper-content article {
+	text-align: center;
+}
+
+.paper-content {
+	border-bottom: 1px solid @graySmoke;
+}
+.paper-content:last-child {
+	border-bottom: none;
+}
+
+.paper-content article:first-child {
+	padding-top: 0px;
+}
+
+.paper-content h4, .paper-content p {
+	text-align: left;
+}
+
+.paper-banner {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.paper-banner a {
+	display: block;
+	float: none;
+}
+
+.banner {
+	display:block;
+	position:relative
+}
+
+.paper-banner a {
+	//padding-top: 4px;
+}
+
+.paper-banner .banner .resumeicons a, .paper-banner .banner .contactmeicons a {
+	margin-top: 10px;
+}
+
+.paper-content hgroup h3 {
+	#font > .sans-serif(@baseFontSize + 5, 300, @baseLineHeight + 5);
+	margin:5px 0px 20px 0px;
+	.backface-visibility(hidden);
+}
+
+.paper-content hgroup h4 {
+	#font > .sans-serif(@baseFontSize, 600, @baseLineHeight);
+	margin:10px 0px 0px 0px;
+	text-align: left;
+	display: block;
+	float: left;	
+}
+
+.paper-content hgroup h5 {
+	#font > .sans-serif(@baseFontSize, 400, @baseLineHeight);
+	margin: 10px 0px 0px 10px;
+	text-align: left;
+	display: block;
+	float: left;
+}
+
+h4.position {
+	#font > .sans-serif(@baseFontSize, 600, @baseLineHeight);
+	color: @grayLight;
+}
+
+h4#linkedin-title {
+	text-align: center;
+}
+
+ul.referral-contacts {
+	margin-bottom: 20px;
+}
+
+ul.referral-contacts li a {
+	color:#999;
+	display:block;
+	padding:10px 15px;
+	margin:10px 0 0;
+	background-color:@graySmoke;
+	border:1px solid #F0F0F0;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	text-align:center;
+	&:hover, &:active, &:focus {
+		color:#605f5f;
+	}
+}
+
+.cloud a {
+	display:block;
+	text-align:center;
+	opacity:1;
+}
+
+/* Contact Icons */
+ul.contact {
+	list-style: none;
+	margin: 0;
+}
+
+ul.contact li {
+	color: #282725;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	color: @white;
+	border: solid 1px rgba(0,0,0,.15);
+	.box-shadow(inset 0 1px 1px 0px rgba(255,255,255,.12), 0 1px 1px 0px rgba(0,0,0,.5));
+	//.box-shadow(inset 0 1px 1px 0 rgba(255,255,255,.1), 0 1px 1px 0px rgba(0,0,0,.5));
+	//.box-shadow(inset 0 0px 1px 1px rgba(255,255,255,.04));
+	background-color: darken(@slateLight, 4%);
+	display: inline-block;
+	margin: 10px 10px 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	.transition(all 200ms );
+	&:hover {
+		.box-shadow(inset 0 1px 1px 0 rgba(0,0,0,.5), 0 1px 1px 0px rgba(255,255,255,.1));
+		background-color: darken(@slateLight, 5%);
+	}
+}
+
+ul.contact li span {
+	display: none;
+}
+
+li.emailme a {
+	background-image:url('../img/icons.png');
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	height:48px;
+	width:48px;
+	//.backface-visibility(hidden);
+}
+
+li.callme a {
+	background-image:url('../img/icons.png');
+	background-position:-49px 0;
+	background-repeat:no-repeat;
+	display:block;
+	height:48px;
+	width:48px;
+	//.backface-visibility(hidden);
+}
+
+section#letterhead h2 {
+	margin-top: 0;
+}
+
+/* Home Page Styles
+------------------------------------ */
+/* Team Thumbnails */
+
+section#content {
+	margin: 0 -10px 0px -10px;
+	padding: 0 10px 0px 10px;
+}
+
+section#intro {
+	background-color: @slateLight;
+	margin: 0 -10px 0px -10px;
+	padding: 0 10px 0px 10px;
+}
+	
+ul.headshots {
+	padding: 10px 0 10px 0;
+	margin: 0 0 0px 0;
+	
+}
+
+ul.headshots li {
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	//float: left;
+	//padding: 0px;
+}
+
+ul.headshots li img {
+	height: 60px;
+	width: 60px;
+	padding: 0;
+	.backface-visibility(hidden);
+}
+
+section#buckets {
+	margin-bottom: 0px;
+	padding-top: 0px;
+}
+section#buckets ul.thumbnails li:last-child {
+	margin-bottom: 0;
+}
+
+section#pong {
+	//display: none;
+	text-align: center;
+	padding-top: 0px;
+}
+
+section#pong h3 {
+	//font-size: @baseFontSize + 3;
+	//padding-left: 10px;
+	//padding-right: 10px;
+	//text-align: center;
+}
+
+section#pong p {
+	//font-size: @baseFontSize;
+	//line-height: @baseLineHeight;
+	//padding-left: 10px;
+	//padding-right: 10px;
+}
+a.bucket {
+	//background-color: @printerBlacker;
+	.transition(all .2s linear);
+}
+section#pong a.btn{
+	margin-top: 20px;
+	text-align: center;
+	display: inline-block;
+}
+
+section#resize-me {display: none;}
+
+/* Cover Letter Page Styles
+------------------------------------ */
+
+.paper-header {
+	margin:-20px -20px 18px;
+	padding:20px;
+	text-align:center;
+}
+
+/* Resume Page Styles
+------------------------------------ */
+ul.software-skills, ul.development-skills, ul.hardware-skills {
+text-align: left;
+margin-bottom: 10px;
+}
+.paper-content ul.software-skills li, .paper-content ul.development-skills li, .paper-content ul.hardware-skills li {
+	list-style: none;
+	display: inline-block;
+	text-align: left;
+}
+.paper-content ul.software-skills li:after, .paper-content ul.development-skills li:after, .paper-content ul.hardware-skills li:after {
+	content: ", ";
+}
+.paper-content ul.software-skills li:last-child:after, .paper-content ul.development-skills li:last-child:after, .paper-content ul.hardware-skills li:last-child:after {
+	content: "";
+}
+/* Portfolio Page Styles
+------------------------------------ */
+
+.canvas, .canvas-banner {
+	margin-top: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.portfoliofeature h2 {
+	font-size: @baseFontSize + 3;
+	display: block;
+	padding: 20px 10px 5px 10px;
+}
+
+.portfoliofeature .details .summary {
+	font-size: @baseFontSize;
+	display: block;
+	padding: 0px 10px 20px 10px;
+	border-bottom: 1px solid @graySmoke; 
+}
+
+/* Process Page Styles
+------------------------------------ */
+
+/* Contact Page Styles
+------------------------------------ */
+/* Contact Me Banner Fixes */
+
+p.contactlead {
+	#font > .sans-serif(@baseFontSize + 5, 400, @baseLineHeight + 4);
+	padding-top:20px;
+}
+
+.contacticons {
+	margin-bottom:18px;
+}
+
+.contacticons li {
+	margin:5px 14px;
+}
+
+}
+
+/* Mobile Devices Landscape Specific
+----------------------------------------*/
+@media (min-width: 480px) and (max-width: 767px) {
+/* Styles */
+.navbar .brand {
+	font-size: 22px;
+	letter-spacing: .05em;
+}
+
+.navbar .nav {
+	display: none;
+}
+
+}
+
+/*:::PRIMARY:::*//* Landscape phones and down 
+---------------------------------------------------------------------*/
+@media (max-width: 480px) {
+/* Styles */
+
+/* Globalnav Page slide */
+
+section#letterhead {
+	margin: 0 -10px 0 -10px;
+}
+
+.view-slideout {}
+
+#slideout {
+	width:200px;
+}
+
+#slideout ul#globalnav {
+	width:auto;
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border:none;
+	background:none;
+	box-shadow:none;
+/* Firefox v3.5+ */
+	-moz-box-shadow:none;
+/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-box-shadow:none;
+/* Firefox v4.0+ , Safari v5.1+ , Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+	box-shadow:none;
+	text-indent:0;
+	color:#FFF;
+	margin:0;
+	background-color:transparent;
+}
+
+#slideout ul#globalnav li {
+	padding:0;
+	margin:0 20px;
+	list-style:none;
+	display:block;
+	float:none;
+}
+
+#slideout ul#globalnav li:active {
+	-webkit-tap-highlight-color:green;
+	background-color:#222;
+}
+
+#slideout ul#globalnav li a.navtext {
+	position:relative;
+	bottom:0;
+	color:#848484;
+	text-shadow:0 1px 0 rgba(0,0,0,.6);
+	width:auto;
+	font:600 18px/30px proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-transition:color .4s linear;
+	-moz-transition:color .4s linear;
+	-o-transition:color .4s linear;
+	-ms-transition:color .4s linear;
+	transition:color .4s linear;
+	border-bottom:solid 1px #2b2b2b;
+	-moz-box-shadow:0 1px 0 #3d3d3d;
+	-webkit-box-shadow:0 1px 0 #3d3d3d;
+	box-shadow:0 1px 0 #3d3d3d;
+	padding:11px 20px;
+	display:block;
+	text-align:left;
+}
+
+#slideout ul#globalnav li a.navtext:hover {
+	text-decoration:none;
+	color:#fff;
+}
+
+#slideout ul#globalnav li a.navtext.active {
+	text-decoration:none;
+	color:#fff;
+}
+
+/* end slideout */
+
+/* Footer */
+
+.social-btns {
+	margin: 0 auto;
+}
+.copyright {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.tweet {
+	display: block;
+	float: none;
+}
+
+/* Basic Page Styles
+------------------------------------ */
+
+
+/* Cover Letter Styles
+------------------------------------ */
+.paper-header {
+	margin:-20px -10px 18px;
+	padding:20px;
+	text-align:center;
+}
+
+}
+
+/*:::PRIMARY:::*//* Portrait tablet to landscape and desktop 
+------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 979px) {
+/* Styles */
+body {
+	padding-top: 0px;
+}
+
+nav a {
+margin: 0px 10px 0px 10px;
+}
+
+.btn-block-fluid {
+	width: 90%;
+}
+/* Basic Page Style Adjustments */
+.paper {
+	padding:20px 30px;
+}
+
+.paper-banner {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/* Home Page Style Adjustments */
+#content .greeting {
+	margin-top: 10%;
+}
+
+#content .greeting h2 {
+	font-size: @baseFontSize + 10;
+	line-height: @baseLineHeight;
+}
+
+#content .greeting p {
+	font-size: @baseFontSize + 1;
+}
+
+/* Portfolio Page */
+.canvas, .canvas-banner {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/* Contact Icons */
+ul.contact {
+	list-style: none;
+	margin: 0;
+}
+
+li.emailme i, li.callme i {
+	display: none;
+}
+
+ul.contact li {
+	color: #282725;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	color: @white;
+	border: solid 1px rgba(0,0,0,.15);
+	.box-shadow(inset 0 1px 1px 0px rgba(255,255,255,.12), 0 1px 1px 0px rgba(0,0,0,.5));
+	//.box-shadow(inset 0 1px 1px 0 rgba(255,255,255,.1), 0 1px 1px 0px rgba(0,0,0,.5));
+	//.box-shadow(inset 0 0px 1px 1px rgba(255,255,255,.04));
+	background-color: darken(@slateLight, 4%);
+	display: inline-block;
+	margin: 10px 10px 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	.transition(all 200ms );
+	&:hover {
+		.box-shadow(inset 0 1px 1px 0 rgba(0,0,0,.5), 0 1px 1px 0px rgba(255,255,255,.1));
+		background-color: darken(@slateLight, 5%);
+	}
+}
+
+ul.contact li span {
+	display: none;
+}
+
+li.emailme a {
+	background-image:url('../img/icons.png');
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	height:48px;
+	width:48px;
+	//.backface-visibility(hidden);
+}
+
+li.callme a {
+	background-image:url('../img/icons.png');
+	background-position:-49px 0;
+	background-repeat:no-repeat;
+	display:block;
+	height:48px;
+	width:48px;
+	//.backface-visibility(hidden);
+}
+
+}
+
+
+/* iPads (portrait and landscape) 
+---------------------------------------------------------------------------------------*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+/* Contact Icons */
+ul.contact {
+	list-style: none;
+	margin: 0;
+}
+
+li.emailme i, li.callme i {
+	display: none;
+}
+
+ul.contact li {
+	color: #282725;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	color: @white;
+	border: solid 1px rgba(0,0,0,.15);
+	.box-shadow(inset 0 1px 1px 0px rgba(255,255,255,.12), 0 1px 1px 0px rgba(0,0,0,.5));
+	//.box-shadow(inset 0 1px 1px 0 rgba(255,255,255,.1), 0 1px 1px 0px rgba(0,0,0,.5));
+	//.box-shadow(inset 0 0px 1px 1px rgba(255,255,255,.04));
+	background-color: darken(@slateLight, 4%);
+	display: inline-block;
+	margin: 10px 10px 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	.transition(all 200ms );
+	&:hover {
+		.box-shadow(inset 0 1px 1px 0 rgba(0,0,0,.5), 0 1px 1px 0px rgba(255,255,255,.1));
+		background-color: darken(@slateLight, 5%);
+	}
+}
+
+ul.contact li span {
+	display: none;
+}
+
+li.emailme a {
+	background-image:url('../img/icons.png');
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	height:48px;
+	width:48px;
+	//.backface-visibility(hidden);
+}
+
+li.callme a {
+	background-image:url('../img/icons.png');
+	background-position:-49px 0;
+	background-repeat:no-repeat;
+	display:block;
+	height:48px;
+	width:48px;
+	//.backface-visibility(hidden);
+}
+
+}
+
+/* iPads (landscape) 
+------------------------ */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+ul.headshots li img {
+padding: 8px;
+}
+
+}
+
+/* iPads (portrait)
+----------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+nav a {
+margin: 0px 10px 0px 10px;
+}
+
+}
+
+/* Slidely Wide Desktop Display
+------------------------------------*/
+@media (min-width: 980px) {
+/* Styles */
+
+}
+
+/* Large Desktop Displays 
+----------------------------------------*/
+@media (min-width: 1200px) {
+/* Styles */
+}
+
+/* Retina Displays (Tip: Best used only for image replacement)
+------------------------------------------------------------------ */
+@media 
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+
+//header a.brand {
+	//background-image: url("../img/logo@2x.png");
+	//background-size: 200px 57px;
+//}
+
+a.plus {
+	background-image: url("@{icons2xTrigger}");
+	background-size: 22px 22px;
+	height: 22px;
+	width: 22px;
+}
+
+section#content::before {
+	background: @white url(@bgWood2x) repeat-x;
+	background-size: 512px 512px;
+}
+
+.paper-banner h3::before {
+	background: url(@icons2xGlobalPath) no-repeat;
+	background-size: 480px 480px;
+}
+
+.paper-content hgroup h3::before {
+	background: url(@icons2xGlobalPath) no-repeat;
+	background-size: 480px 480px;
+}
+
+
+a.cloud {
+	background-image: url("../img/cloud2x.png");
+	background-repeat: no-repeat;
+	background-size: 96px 84px;
+}
+
+#buckets h3::before {
+	background-image: url("../img/bucket-icons@2x.png");
+	background-size: 150px 46px;
+}
+
+/* BANNERS
+--------------------------------------- */
+
+.leftarrow {
+	background-image: url(@icons2xGlobalPath);
+	background-repeat: no-repeat;
+	background-position: -300px -108px;
+	background-size: 480px 480px;
+	height: 24px;
+	width: 24px;
+}
+
+.leftarrow i {
+	background-image: url(@icons2xGlobalPath);
+	background-repeat: no-repeat;
+	background-position: -252px -108px;
+	background-size: 480px 480px;
+	height: 24px;
+	width: 24px;
+}
+
+span.rightarrow {
+	background-image: url(@icons2xGlobalPath);
+	background-repeat: no-repeat;
+	background-position: -300px -108px;
+	background-size: 480px 480px;
+	height: 24px;
+	width: 24px;
+}
+
+/* Resume and Contact Banner */
+
+.paper-banner .banner .resumeicons a, .paper-banner .banner .contactmeicons a {
+	background-image:url(@icons2xGlobalPath);
+	background-size: 480px 480px;
+}
+
+/* Contact Buttons */
+
+li.emailme a {
+	display: block;
+	background-image: url(@icons2xGlobalPath);
+	background-repeat: no-repeat;
+	background-size: 480px 480px;
+	background-position: 0px 0px;
+	height: 48px;
+	width: 48px;
+}
+
+li.callme a {
+	display: block;
+	background-image: url(@icons2xGlobalPath);
+	background-repeat: no-repeat;
+	background-size: 480px 480px;
+	background-position: -48px 0px;
+	height: 48px;
+	width: 48px;
+}
+
+/* Contact Icons */
+.contacticons a {
+	background-image:url(@icons2xGlobalPath);
+	background-repeat:no-repeat;
+	background-size: 480px 480px;
+}
+
+}
+
+/* iPhone Retina Displays (Tip: Best used only for image replacement)
+------------------------------------------------------------------ */
+@media 
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5)
+and (max-width: 480px) {
+/* Styles */
+
+}
