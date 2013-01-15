@@ -119,13 +119,19 @@
         return (el.nodeType === 1 && (" " + el.className + " ").replace(/[\n\t\r]/g, " ").indexOf(className) > -1);
     }
 })();
+/*
 function dummy() {
     return this.name_;
 }
+*/
 var body = document.body;
-//var link = body.querySelector('active');
+var link = body.querySelector('active');
 var link = body.getElementsByTagName('a','li');
 for(var i = 0; i < link.length; i++){
+	link[i].setAttribute('ontouchstart', "");
+}
+/*
+	
 	link[i].addEventListener('touchstart', function() {
 		link.onmouseover.call(link);
 	}, false);
@@ -133,3 +139,4 @@ for(var i = 0; i < link.length; i++){
 		link.onmouseout.call(link);
 	}, false);
 }
+*/

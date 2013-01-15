@@ -27,7 +27,7 @@
   clear: both;
 }
 .hide-text {
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -336,11 +336,11 @@ body.menu-open #page {
   position: absolute;
   margin: 0 0 0 -10px;
   overflow: visible;
-  -webkit-transform: translatex(-190px);
-  -moz-transform: translatex(-190px);
-  -ms-transform: translatex(-190px);
-  -o-transform: translatex(-190px);
-  transform: translatex(-190px);
+  -webkit-transform: translateX(-190px);
+  -moz-transform: translateX(-190px);
+  -ms-transform: translateX(-190px);
+  -o-transform: translateX(-190px);
+  transform: translateX(-190px);
   -webkit-transition: -webkit-transform 200ms ease-in;
   -moz-transition: -moz-transform 200ms ease-in;
   -ms-transition: -ms-transform 200ms ease-in;
@@ -482,10 +482,6 @@ body.menu-open a.plus {
   font-size: 16px;
   color: #bcb6b2;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 #menu ul li:hover {
@@ -516,10 +512,10 @@ body.menu-open a.plus {
   display: block;
   position: relative;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -o-transition: all 0s linear;
+  transition: all 0s linear;
 }
 #menu ul li a:hover,
 #menu ul li a:active,
@@ -1124,7 +1120,7 @@ ul.contact li.emailme a span:hover {
   height: 24px;
   width: 24px;
   margin: 0px 10px 0 10px;
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -1313,7 +1309,7 @@ p.contactlead {
   background-repeat: no-repeat;
   height: 48px;
   width: 48px;
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -1330,7 +1326,7 @@ p.contactlead {
 .contacticons a:hover,
 .contacticons a:focus,
 .contacticons a:active {
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
