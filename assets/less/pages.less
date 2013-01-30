@@ -400,7 +400,7 @@ body.menu-open a.plus {
         text-shadow: 0 1px 0 rgba(0, 0, 0, .6);
         //.transition(all .3s linear);
         -webkit-tap-highlight-color: rgba(0,0,0,0);
-        &:hover {
+        &:active {
         .box-shadow(inset 0px 0px 10px 1px rgba(0, 0, 0, .6));
         background-color: rgba(0,0,0, .20);
         }
@@ -408,12 +408,12 @@ body.menu-open a.plus {
         
     #menu ul li::first-child, #menu ul li::last-child {
     	.box-shadow(inset 0px -1px 0px 0px rgba(0, 0, 0, .2), inset 0px 1px 0px 0px rgba(255, 255, 255, .04));
-    	&:hover {
+    	&:active {
         .box-shadow(inset 0px 0px 10px 1px rgba(0, 0, 0, .4));
         }
     }
  
-    #menu ul li:hover + li {
+    #menu ul li:active + li {
 	    .box-shadow(inset 0px -1px 0px 0px rgba(0, 0, 0, .2), inset 0px 1px 0px 0px rgba(255, 255, 255, .06));
     }
     
@@ -423,7 +423,7 @@ body.menu-open a.plus {
 	    position: relative;
 	    -webkit-tap-highlight-color: rgba(0,0,0,0);
 	    .transition (all 0s linear);
-	    &:hover, &:active, &.active, &:focus {
+	    &:active, &.active, &:focus {
 		   color: @white; 
 	    }
 	}
@@ -641,7 +641,8 @@ section#content .container {
 
 section#intro {
 	background: @slateLight;
-	border: 1px solid @printerLighter;
+	border-top: 1px solid #414141;
+	border-bottom: 1px solid @printerLighter;
 	margin-bottom:10px;
 }
 
