@@ -26,7 +26,7 @@
   clear: both;
 }
 .hide-text {
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -208,7 +208,7 @@ body.menu-open #page {
   position: absolute;
   /* -webkit-transform: translate3d(260px, 0, 0); */
 
-  -webkit-transform: translatex(-220px);
+  -webkit-transform: translateX(-220px);
   /* overflow:hidden; */
 
 }
@@ -1255,7 +1255,7 @@ a.btn-cta {
 }
 /* Retina Displays (Tip: Best used only for image replacement)
 ------------------------------------------------------------------ */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 21), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* Styles */
   a.plus {
     background-image: url("../img/open@2x.png");
@@ -1344,7 +1344,7 @@ a.btn-cta {
 }
 /* iPhone Retina Displays (Tip: Best used only for image replacement)
 ------------------------------------------------------------------ */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) and (max-width: 480px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 21), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), and (max-width: 480px) {
   /* Styles */
 }
 /* Font-Face
@@ -1363,7 +1363,7 @@ a.btn-cta {
   clear: both;
 }
 .hide-text {
-  font: a;
+  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
